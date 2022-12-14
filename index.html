@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
     <style>
-        /* #name{
+        #name{
             display: none;
         }
 
@@ -18,12 +19,17 @@
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
 
-        #Hover:hover + #name{
+        #hvr:hover + #name{
            display: block;
            color: blue;
-        } */
+        }
+
         /* nav bar-top part  */
+        * {box-sizing: border-box;}
+
+
         #nav {
+            overflow: hidden;
             display: flex;
             justify-content: space-between;
             background-color: #f2f2f2;
@@ -57,11 +63,12 @@
         /* app logo part nav part */
 
 
-        #logoline {
+        /* #logoline {
             height: 150px;
             width: 100%;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-        }
+        } */
+        
 
         #logo {
             display: flex;
@@ -81,117 +88,161 @@
             padding-right: 100px;
             font-size: 25px;
         }
+        #logo>i{
+            margin-top: 35px;
+            margin-left: 20px;
+            font-size: 25px;
+        }
 
         #options {
 
             display: flex;
-            gap: 40px;
-            margin-top: 25px;
+            gap: 50px;
+            margin-top: 30px;
             font-size: 21px;
+            padding-bottom: 1%;
 
-        }
+        } */
 
-        #options>a {
+         #options>a {
             text-decoration: none;
             font-family: Verdana, Arial, Helvetica, sans-serif;
             color: #4a4a4a;
         }
+        #options>a{
+            text-decoration: none;
+        }
+
+        /* #name {
+            display: none;
+        }
+
+        #name {
+            height: 300px;
+            width: 50%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        } */
+
+        /* #touch:hover~#name {
+            display: block;
+            color: blue;
+        } */
+
+    
 
         /* big image part  */
-        
+
         #bigimg>div {
             height: 500px;
             width: 85%;
             margin-top: 50px;
             margin-left: 8%;
-            
+
         }
 
         #bigimg>div>img {
             width: 100%;
         }
 
-        #slider>div{
-            height: 300px;
-           width: 85%;
-           margin: 200px auto;
-           background-color: #bebebe;
-           padding-bottom: 250px;
+        /* slider part */
+        #slider {
+            margin-top: 200px;
         }
-     
-        /* * {
-            box-sizing: border-box;
-        } */
 
-        /* body {
-            font-family: sans-serif;
-        } */
+        #slider>div {
+            height: 300px;
+            width: 86%;
+            margin: 100px auto;
+            background-color: #bebebe;
+            padding-bottom: 400px;
+
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
 
         .carousel-cell {
             width: 28%;
             height: 300px;
             margin-right: 10px;
             background: rgb(255, 255, 255);
-            margin-top: 200px;
+            margin-top: 70px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
-
-        /* .carousel-cell.is-selected {
-            background: #ED2;
-        } */
-
-        /* cell number */
 
         .carousel-cell:before {
             display: block;
             text-align: center;
-            line-height: 200px;
             font-size: 80px;
             color: white;
-            margin-top: 200px;
         }
-        .carousel-cell>p{
-          
+
+        .carousel-cell>p {
+
             text-align: center;
             margin-top: 30px;
         }
-        .carousel-cell>h3{
+
+        .carousel-cell>h3 {
             margin-top: 30px;
             text-align: center;
         }
-        .carousel-cell>button{
-          margin-top: 80px;
-          margin-left: 20%;
-           
-           border: none;
-           background-color: black;
-           color: white;
-           padding: 13px 75px 13px 75px;
-           font-size: 20px;
+
+        .carousel-cell>button {
+            margin-top: 80px;
+            margin-left: 20%;
+
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 13px 75px 13px 75px;
+
+            font-weight: bold;
         }
 
-           /* big img 2nd part */
+        .carousel-cell>button:hover {
+            background-color: rgb(191, 191, 191);
+            color: black;
+        }
 
-           #bigimg2>div {
+        /* added big img */
+        #bigimgadded>div {
             height: auto;
             width: 85%;
 
-            margin-left: 8%;
-            
+            margin: auto;
         }
+
+        #bigimgadded>div>img {
+            width: 100%;
+        }
+
+        /* big img 2nd part */
+
+        #bigimg2>div {
+            height: auto;
+            width: 85%;
+
+            margin: 50px auto;
+
+        }
+
 
         #bigimg2>div>img {
             width: 100%;
         }
-         
-        
+
+
         /* shop by catagory page */
 
 
-        h1{
+        h1 {
             text-align: center;
         }
-        #catagary{
+
+        #catagary {
             height: auto;
             width: 85%;
 
@@ -200,41 +251,296 @@
             justify-content: space-evenly;
             gap: 10px;
         }
-        #catagary>div>img{
-            width:100%;
+
+        #catagary>div>img {
+            width: 100%;
         }
-        #catagary>div>a{
-         font-size: 18px;
-         margin-left: 20px;
-         color: black;
+
+        #catagary>div>a {
+            font-size: 18px;
+            margin-left: 20px;
+            color: black;
         }
 
         /* collection page male female */
-        #collection{
+        #collection {
             height: auto;
-            width: 85%;
+            width: 86%;
             display: flex;
-            margin: 50px auto;
+            margin: 60px auto;
             gap: 20px;
         }
-        #collection>div>p{
-           font-size: 20px;
-           text-align: center;
-           color: #727272;
+
+        #collection>div>p {
+            font-size: 20px;
+            text-align: center;
+            color: #727272;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        #collection>div>a{
-         margin-left: 38%;
+
+        #collection>div>a {
+            margin-left: 38%;
+            color: black;
+            font-size: 22px;
         }
-        
-        #bigimg3>div{
-            height: 500px;
-            width: 89%;
-            margin-top: 50px;
-            margin-left: 7%;
-        }
-        #bigimg3>div>img{
+
+        #collection>div>img {
             width: 100%;
         }
+
+        /* big img 3 part */
+        #bigimg3>div {
+            height: auto;
+            width: 89%;
+            margin-top: 50px;
+            margin-left: 7.2%;
+
+        }
+
+        #bigimg3>div>img {
+            width: 100%;
+        }
+
+        /* buttons part */
+        #buttons {
+            height: auto;
+            width: 86%;
+
+            margin: 50px auto;
+
+        }
+
+        #buttons>div:nth-child(1) {
+            height: auto;
+            width: 70%;
+            margin-left: 210px;
+            display: flex;
+            gap: 20px;
+
+
+        }
+
+        #buttons>div:nth-child(2) {
+            height: auto;
+            width: 70%;
+            margin-left: 450px;
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        #buttons>div>button {
+            background-color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #buttons>div>button:hover {
+            background-color: #ababab;
+            color: black;
+
+        }
+
+        #bigimg4>div {
+            height: auto;
+            width: 89%;
+            margin-top: 50px;
+            margin-left: 7.2%;
+        }
+
+        /* big img-4 part */
+        #bigimg4>div>img {
+            width: 100%;
+        }
+
+
+        /* button 2nd part */
+
+        #button2nd {
+            height: auto;
+            width: 86%;
+            display: flex;
+            margin: 50px auto;
+        }
+
+        #button2nd>div:nth-child(1) {
+            height: auto;
+            width: 50%;
+            margin-left: 450px;
+            display: flex;
+
+
+        }
+
+        #button2nd>div:nth-child(2) {
+            height: auto;
+            width: 100%;
+            margin-right: 200px;
+            display: flex;
+
+
+        }
+
+        #button2nd>div>button {
+            background-color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        #button2nd>div>button:hover {
+            background-color: #ababab;
+            color: black;
+
+        }
+
+        /* more good part */
+
+        #moregood{
+            display: flex;
+            gap: 10px;
+            height: auto;
+            width: 85%;
+            margin: auto;
+        }
+        #moregood>div>img{
+            width: 100%;
+        }
+        #moregood>div>a{
+            margin-left: 30px;
+            color: black;
+        }
+
+
+        /* instalogo part */
+
+        #instalogo{
+            height: 30px;
+            width: 33%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 100px auto;
+        }
+        #instalogo>p{
+            margin: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #instalogo>h2{
+            margin: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    /* slider part 2    */
+        #slider2>div {
+            height: 250px;
+            width: 86%;
+            margin: 5px auto;
+            background-color: #ffffff;
+           
+
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-cell2 {
+            display: flex;
+            gap: 10px;
+            width: 30%;
+            height: 250px;
+            margin-right: 10px;
+            background: rgb(255, 255, 255);
+            margin-top: 20px;
+            background-color: white;
+        
+        }
+
+        .carousel-cell2:before {
+            display: block;
+          
+            color: white;
+            margin-left: 10px;
+        }
+        #carousel2>div>img{
+            width: 100%;
+        }
+
+
+        /* discripstion part */
+
+        #dispart{
+    
+            width: 60%;
+           
+            margin: 80px auto;
+           
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #dispart>pre{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+        }
+
+
+        /* discripsion part */
+
+        #bootom_part{
+            display: flex;
+            width: 80%;
+            margin: 50px auto;
+            gap: 50px;
+           
+        }
+        #bootom_part>div:nth-child(2){
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+
+        }
+        #bootom_part>div:nth-child(2)>div>p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+            font-size: 17px;
+        }
+        #bootom_part>div>p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+            font-size: 17px;
+        }
+        #bootom_part>h3,h4{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* last bottom part */
+
+        #lastbottom{
+            height: 200px;
+            width: 100%;
+            background-color: #e6e6e6;
+            padding: 3%;
+        }
+        #lastbottom>pre{
+         text-align: center;
+         font-size: 13px;
+        }
+        #lastbottom>p{
+         text-align: center;
+         color: #727272;
+        }
+
+        
+      
 
     </style>
 </head>
@@ -275,11 +581,13 @@
             <div>
                 <input type="text" placeholder="Search by or product...">
             </div>
+            <i id="hvr" class="fa-solid fa-user-tie"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
 
         </div>
         <div id="options">
             <a href="">TOP OFFERS</a>
-            <a href="">BODY CARE</a>
+            <a href="" id="touch">DODY CARE</a>
             <a href="">CANDELS</a>
             <a href="">WALLFLOWERS & AIR FRESHENERS</a>
             <a href="">HAND SOAPS & SANITIZERS</a>
@@ -287,6 +595,18 @@
         </div>
 
     </div>
+    <hr>
+
+
+
+    <!-- hover -->
+
+    <!-- <div id="name">
+        <p>raj tupe great</p>
+        <p>raj tupe great</p>
+        <p>raj tupe great</p>
+        <p>raj tupe great</p>
+    </div> -->
 
 
     <!-- big image part -->
@@ -302,10 +622,10 @@
 
 
     <!-- slider product -->
-     <div id="slider">
+    <div id="slider">
         <!-- <h1>TODAYS TOP OFFERS</h1> -->
         <div id="carousel" data-flickity='{ "groupCells": true }'>
-            
+
             <div class="carousel-cell">
                 <p>Hand soaps</p>
                 <h3>5/$25</h3>
@@ -323,7 +643,7 @@
             </div>
             <div class="carousel-cell">
                 <p>Wallflower fragrance Reffills</p>
-                <h3>5/$25</h3>
+                <h3>$59</h3>
                 <button>SHOP</button>
             </div>
             <div class="carousel-cell">
@@ -333,7 +653,7 @@
             </div>
             <div class="carousel-cell">
                 <p>Wallflower fragrance Reffills</p>
-                <h3>5/$25</h3>
+                <h3>$40</h3>
                 <button>SHOP</button>
             </div>
             <div class="carousel-cell">
@@ -354,89 +674,300 @@
 
         </div>
 
-  
 
-     </div>
+    </div>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-
-     <!-- big img 2nd part -->
-
-     <div id="bigimg2">
-           
+    <!-- added big img -->
+    <div id="bigimgadded">
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc8299910/images/Christmas2022/bc_hol-trads_c1_hm.gif?yocs=s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwd1c59e9e/images/Christmas2022/cndl_holtrads-wb_c1_hm.gif?yocs=s_"
+                alt="">
         </div>
-        
-     </div>
+    </div>
 
-     <!-- shop by catagory page -->
- 
-     <h1>SHOP BY CATAGORY</h1>
-     <div id="catagary">
-       
+    <!-- big img 2nd part -->
+
+    <div id="bigimg2">
+
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw90169280/images/Christmas2022/bc_dream-bright_c1_vn.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc8299910/images/Christmas2022/bc_hol-trads_c1_hm.gif?yocs=s_"
+                alt="">
+        </div>
+
+    </div>
+
+    <!-- shop by catagory page -->
+
+    <h1>SHOP BY CATAGORY</h1>
+    <div id="catagary">
+
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw90169280/images/Christmas2022/bc_dream-bright_c1_vn.jpg?yocs=o_s_"
+                alt="">
             <a href="">shop by Body Care</a>
         </div>
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw9c3dac1d/images/Christmas2022/cndl_holtrads-wb_c1_vn.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw9c3dac1d/images/Christmas2022/cndl_holtrads-wb_c1_vn.jpg?yocs=o_s_"
+                alt="">
             <a href="">Shop Candles free</a>
         </div>
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw31e8f9db/images/Christmas2022/diff_innovation_c1_vn.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw31e8f9db/images/Christmas2022/diff_innovation_c1_vn.jpg?yocs=o_s_"
+                alt="">
             <a href="">Shop Wallflowerss</a>
         </div>
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw8ac572be/images/Christmas2022/sp_holtrads-gifting_c1_vn.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw8ac572be/images/Christmas2022/sp_holtrads-gifting_c1_vn.jpg?yocs=o_s_"
+                alt="">
             <a href="">Shop Hand & Soaps</a>
         </div>
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwcf3b1b26/images/Christmas2022/bc_mens-sfl-blktie_c1_vn.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwcf3b1b26/images/Christmas2022/bc_mens-sfl-blktie_c1_vn.jpg?yocs=o_s_"
+                alt="">
             <a href="">Shop Men's & free</a>
         </div>
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2fdbe2d9/xcat_stg-gift-sets_c1_vn.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2fdbe2d9/xcat_stg-gift-sets_c1_vn.jpg?yocs=o_s_"
+                alt="">
             <a href="">Gift Sets $ shop</a>
         </div>
-     </div>
+    </div>
 
-     <!-- collection page male female -->
+    <!-- collection page male female -->
 
 
-     <div id="collection">
+    <div id="collection">
 
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw73cbda8f/images/Christmas2022/xcat_dream-bright_c1_hps.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw73cbda8f/images/Christmas2022/xcat_dream-bright_c1_hps.jpg?yocs=o_s_"
+                alt="">
             <p>Let fragrance dreams become reality with new Dream Bright.</p>
             <a href="">Shop The Collection</a>
         </div>
         <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2677eba4/images/Christmas2022/obc_after-dark_c1_hps.jpg?yocs=o_s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2677eba4/images/Christmas2022/obc_after-dark_c1_hps.jpg?yocs=o_s_"
+                alt="">
             <p>Holiday happenings call for the gold standard in everyday luxury.</p>
             <a href="">Shop Men's</a>
         </div>
-     </div>
+    </div>
 
+    <!-- big img -3 part -->
 
-
-     <!-- big img -3 part -->
-
-     <div id="bigimg3">
+    <div id="bigimg3">
 
         <div>
 
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw126cc0be/images/Christmas2022/xcat_hp-gifting-zone_c1_hb.jpg?yocs=s_" alt="">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw126cc0be/images/Christmas2022/xcat_hp-gifting-zone_c1_hb.jpg?yocs=s_"
+                alt="">
         </div>
+    </div>
+
+    <!-- buttons part -->
+
+    <div id="buttons">
+        <div>
+            <button>STOCKING STUFFERS</button>
+            <button>GIFT SETS</button>
+            <button>GIFTS UNDER $15</button>
+            <button>GIFTS FOR HER</button>
+        </div>
+        <div>
+            <button>GIFTS FOR HIM</button>
+            <button> GIFT CARDS</button>
+        </div>
+    </div>
+
+    <!-- big img-4 part -->
+
+    <div id="bigimg4">
+
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw481d974e/images/Fall2022/xcat_moxy-launch_fa3_gh.gif?yocs=s_"
+                alt="">
+
+        </div>
+    </div>
+
+    <!-- buttons 2nd part -->
+    <div id="button2nd">
+        <div>
+            <button>LEARN MORE</button>
+        </div>
+        <div>
+            <button>SHOP MOXY</button>
+        </div>
+
+
+    </div>
+
+    <!-- more good things part -->
+
+    <h1>MORE GOOD THINGS, THIS WAY</h1>
+    <div id="moregood">
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwb9d60d44/images/Fall2022/boc-launch-prospects_vn_0.png?yocs=o_s_" alt="">
+            <a href="">Join the VIPs</a>
+        </div>
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwae0faf07/images/Christmas2022/xcat_bopisgeneric_c1_vn.png?yocs=o_s_" alt="">
+            <a href="">Shop your way</a>
+        </div>
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw644e724c/images/Spring2022/xcat_mwts-sms_sp2_vn.jpg?yocs=o_s_" alt="">
+            <a href="">Sign up for texts</a>
+        </div>
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw41a3328c/images/Spring2022/xcat_mwts-email_sp2_vn.jpg?yocs=o_s_" alt="">
+            <a href="">Sign up for emails</a>
+        </div>
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw611329aa/images/Spring2022/xcat_mwts-autorefresh_sp2_vn.png?yocs=o_s_" alt="">
+            <a href="">Check out Auto</a>
+        </div>
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw4dd3c5f1/images/Spring2022/xcat_mwts-returns_sp2_vn.jpg?yocs=o_s_" alt="">
+            <a href="">See Return Policy</a>
+        </div>
+    </div>
+
+
+    <!-- instatag page -->
+    <div id="instalogo">
+        <h2>@ Smash Bath body works</h2>
+        <p>Daily inspiration. Instant happiness. Right here.</p>
+    </div>
+
+    <!-- 2nd slider part -->
+
+    <div id="slider2">
+            <div id="carousel2" data-flickity='{ "groupCells": true }'>
+    
+                <div class="carousel-cell2">
+                   <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwOTYxNjgyLjg3OTUxNTQ0NDg1Ni5qcGVn.jpg?w=640&h=640&fit=cover" alt="">
+                </div>
+                <div class="carousel-cell2">
+                <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwOTQzNzA3LjQ0NTgwOTY4NDUzMC5qcGVn.jpg?w=640&h=640&fit=cover" alt="">
+                </div>
+                <div class="carousel-cell2">
+                  <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwODc1Mjg3LjcwOTM3MTg2NjY5LmpwZWc=.jpg?w=640&h=640&fit=cover" alt=""> 
+                </div>
+                <div class="carousel-cell2">
+                 <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwODU3ODU5Ljc2NzEwMDg0MTM4My5qcGVn.jpg?w=640&h=640&fit=cover" alt="">   
+                </div>
+                <div class="carousel-cell2">
+                  <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwNzg4ODk0LjgxOTUyMzQxMTQ4LmpwZWc=.jpg?w=640&h=640&fit=cover" alt=""> 
+                </div>
+                <div class="carousel-cell2">
+                  <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwNzcwOTE1Ljc0NzM3MDUyODA2NC5qcGVn.jpg?w=640&h=640&fit=cover" alt="">  
+                </div>
+                <div class="carousel-cell2">
+                  <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwNzAyNDc1LjE4MzgyOTUyOTE1OS5qcGVn.jpg?w=640&h=640&fit=cover" alt="">  
+                </div>
+                <div class="carousel-cell2">
+                   <img src="https://images.dashhudson.com/aHR0cHM6Ly9jZG4uZGFzaGh1ZHNvbi5jb20vbWVkaWEvZnVsbC8xNjcwNjc3MjU1LjY0Njk1NDg1MzcxMi5qcGVn.jpg?w=640&h=640&fit=cover" alt=""> 
+                </div>
+               
+            </div>
+    
+    
+    </div>
+    
+      <!-- discripcion part -->
+
+
+      <div id="dispart">
+        <h1>Smash Bath works</h1>
+        <pre>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.From
+                 fresh fragrances to soothing skin care, we make finding your perfect something
+            special a happy-memory-making experience. Searching for new seasonal creations or
+              your favorite discontinued scents? We’ve got you covered there, too. Oh! And while
+             you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</pre>
+      </div>
+
+      <!-- line -->
+      <hr>
+
+      <div id="bootom_part">
+        <div>
+            <h4>GET EMAIL OFFERS & THE LATEST</h4>
+            <h4>NEWS FROM BATH & BODY WORKS!</h4>
+            <p>Enter Email</p>
+            <input type="text">
+            <p>Confirm Email</p>
+            <input type="text">
+            <button>SUBMIT</button>
+            <p>Get connected</p>
+            
+        </div>
+        <div>
+            <div>
+               <h3>CUSTOMER CARE</h3>
+               <p>Help & FAQs</p>
+               <p> Shipping</p>
+               <p>Returns & Exchanges</p>
+               <p> Order Tracking</p>
+               <p>Corporate Sales & Gifts</p>
+
+            </div>
+            <div>
+                <h3>MY ACCOUNT</h3>
+                <p>Sign In or Sign Up</p>
+                <p>Order Tracking</p>
+                <p>My Auto Refresh</p>
+                <p>My Love-It List</p>
+            </div>
+            <div>
+                <h3>DISCOVER</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Gift Cards</p>
+                <p>Shop by Fragrance</p>
+                <p>Product Ingredients</p>
+                <p>Get Inspired</p>
+                <p>Diversity, Equity & Inclusion</p>
+            </div>
+            <div>
+                <h3>FIND US</h3>
+                <p>Store Locator</p>
+                <p>Global Locations</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- last botton part -->
+
+      <div id="lastbottom">
+        <pre>Terms Of Use Privacy Policy Security Bug Report States Privacy Rights (Certain States) Do Not Sell or Share My Personal Information (Certain States) Transparency in Supply Chains</pre>
+        <pre>Targeted Ad Preferences (Certain States) Limit the Use of My Sensitive Personal Information (California)</pre>
+        <p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+      </div>
+   
+     <div id="name">
+
+        <p>adfasdf</p>
+        <p>adsfasd</p>
+        <p>adsfasdf</p>
      </div>
-
-
-
+ 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
 
 <script>
+
+//     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     document.getElementById("nav").style.padding = "30px 10px";
+//     document.getElementById("logoline").style.fontSize = "25px";
+//   } else {
+//     document.getElementById("nav").style.padding = "8px 10px";
+//     document.getElementById("logoline").style.fontSize = "35px";
+//   }
+// }
 
 </script>
