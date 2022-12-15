@@ -87,10 +87,14 @@
             padding-right: 100px;
             font-size: 25px;
         }
-        #logo>i{
+        #logo>a{
             margin-top: 35px;
             margin-left: 20px;
             font-size: 25px;
+            color: black;
+        }
+        #logo>a:hover{
+          color: rgb(255, 234, 195);
         }
 
         #options {
@@ -557,7 +561,7 @@
     <div id="nav">
         <div id="navtop1">
             <p>POINTS. PERKS. EXCLUSIVES.</p>
-            <a href="">Join Rewards!</a>
+            <a href="./reward.html">Join Rewards!</a>
         </div>
         <div id="navtop2">
             <p>PICK UP IN STORE</p>
@@ -576,17 +580,17 @@
             <div>
                 <input type="text" placeholder="Search by or product...">
             </div>
-            <i id="hvr" class="fa-solid fa-user-tie"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="./sign in or sign up page.html"><i id="usericon" class="fa-solid fa-user-tie"></i></a>
+            <a href="./bagpage.html"><i id="bagicon" class="fa-solid fa-bag-shopping"></i></a>
 
         </div>
         <div id="options">
-            <a href="">TOP OFFERS</a>
-            <a href="" id="touch">DODY CARE</a>
-            <a href="">CANDELS</a>
-            <a href="">WALLFLOWERS & AIR FRESHENERS</a>
-            <a href="">HAND SOAPS & SANITIZERS</a>
-            <a href="">MEN'S SHOP</a>
+            <a href="./TOPoffers.html">TOP OFFERS</a>
+            <a href="./Bodaycare.html" id="touch">DODY CARE</a>
+            <a href="./candlespage.html">CANDELS</a>
+            <a href="./wallflowerspage.html">WALLFLOWERS & AIR FRESHENERS</a>
+            <a href="./hands&soappage.html">HAND SOAPS & SANITIZERS</a>
+            <a href="./Men'spage.html">MEN'S SHOP</a>
         </div>
 
     </div>
@@ -938,13 +942,9 @@
         <p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
       </div>
    
-     <div id="name">
+    
+     
 
-        <p>adfasdf</p>
-        <p>adsfasd</p>
-        <p>adsfasdf</p>
-     </div>
- 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
@@ -952,17 +952,6 @@
 
 <script>
 
-//     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     document.getElementById("nav").style.padding = "30px 10px";
-//     document.getElementById("logoline").style.fontSize = "25px";
-//   } else {
-//     document.getElementById("nav").style.padding = "8px 10px";
-//     document.getElementById("logoline").style.fontSize = "35px";
-//   }
-// }
+    document.querySelector("#new>span").textContent=localStorage.getItem("username")
 
 </script>
