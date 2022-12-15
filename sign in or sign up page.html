@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
+    <style>
+        /* nav bar-top part  */
+        * {
+            box-sizing: border-box;
+        }
+
+
+        #nav {
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 1.5%;
+            padding-right: 1.5%;
+        }
+
+        #navtop1 {
+            display: flex;
+            gap: 10px;
+            color: #e31b88;
+        }
+
+        #navtop2 {
+            display: flex;
+            gap: 10px;
+            color: rgb(74, 74, 253);
+        }
+
+        #navtop1>a {
+            margin-top: 13px;
+        }
+
+        #navtop2>a {
+            margin-top: 13px;
+        }
+
+        /* app logo part nav part */
+
+
+        /* #logoline {
+            height: 150px;
+            width: 100%;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        } */
+
+
+        #logo {
+            display: flex;
+            margin-top: 15px;
+            font-size: 25px;
+            gap: 20px;
+        }
+
+        #logo>img {
+            width: 20%;
+            margin-left: 520px;
+        }
+
+        #logo>div>input {
+            margin-top: 20px;
+            padding: 3%;
+            padding-right: 100px;
+            font-size: 25px;
+        }
+
+        #logo>a {
+            margin-top: 35px;
+            margin-left: 20px;
+            font-size: 25px;
+            color: black;
+        }
+        #logo>a:hover{
+            color: blue;
+        }
+
+        #options {
+
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+            font-size: 21px;
+            padding-bottom: 1%;
+
+        }
+
+        */ #options>a {
+            text-decoration: none;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            color: #4a4a4a;
+        }
+
+        #options>a {
+            text-decoration: none;
+        }
+
+
+
+        /* sign in sign up page */
+
+        #signinimg>div {
+            width: 85%;
+            margin: 50px auto;
+        }
+
+        #signinimg>div>img {
+            width: 80%;
+            margin-left: 13%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #boxes {
+            height: auto;
+            width: 70%;
+            margin: 50px;
+            margin-left: 18%;
+            display: flex;
+            gap: 20px;
+        }
+
+        #boxes>div,form {
+            width: 50%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+            padding: 5%;
+
+        }
+
+        #boxes>div:nth-child(2)>img {
+            width: 100%;
+        }
+
+        #boxes>div,form>h2 {
+            text-align: center;
+        }
+
+        #boxes>div>input {
+            width: 90%;
+            padding: 3%;
+        }
+        #boxes>form>input {
+            width: 90%;
+            padding: 3%;
+        }
+
+        /* #boxes>div>button{
+            padding: 4%;
+            margin-top: 40px;
+        } */
+        #boxes>form:nth-child(1)>button {
+            padding: 10px 35px 10px 35px;
+            border: none;
+            margin-top: 40px;
+            margin-left: 33%;
+            color: white;
+            background-color: black;
+        }
+
+        #boxes>div:nth-child(2)>button {
+            padding: 10px 35px 10px 35px;
+            color: white;
+            background-color: black;
+            margin-top: 25px;
+            margin-left: 17%;
+            border: none;
+        }
+
+        #boxes>div:nth-child(2)>button:hover {
+            background-color: rgb(222, 218, 218);
+            color: black;
+
+        }
+        #boxes>div:nth-child(2)>button>a{
+            text-decoration: none;
+            color: white;
+        }
+        #boxes>div:nth-child(2)>button>a:hover{
+            color: black;
+        }
+
+        #boxes>form:nth-child(1)>button:hover {
+            background-color: rgb(222, 218, 218);
+            color: black;
+        }
+
+        #call {
+            height: 150px;
+            text-align: center;
+        }
+
+
+        #dispart {
+
+            width: 60%;
+
+            margin: 80px auto;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #dispart>pre {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+        }
+
+
+        /* discripsion part */
+
+        #bootom_part {
+            display: flex;
+            width: 80%;
+            margin: 50px auto;
+            gap: 50px;
+
+        }
+
+        #bootom_part>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+        }
+
+        #bootom_part>div:nth-child(2)>div>p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+            font-size: 17px;
+        }
+
+        #bootom_part>div>p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+            font-size: 17px;
+        }
+
+        #bootom_part>h3,
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* last bottom part */
+
+        #lastbottom {
+            height: 200px;
+            width: 100%;
+            background-color: #e6e6e6;
+            padding: 3%;
+        }
+
+        #lastbottom>pre {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #lastbottom>p {
+            text-align: center;
+            color: #727272;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar-top part -->
+
+    <div id="nav">
+        <div id="navtop1">
+            <p>POINTS. PERKS. EXCLUSIVES.</p>
+            <a href="">Join Rewards!</a>
+        </div>
+        <div id="navtop2">
+            <p>PICK UP IN STORE</p>
+            <a href="">Set Store</a>
+        </div>
+
+    </div>
+
+    <!-- app logo part nav part -->
+
+    <div id="logoline">
+
+        <div id="logo">
+
+            <img src="./Smash Bath1.png" alt="">
+            <div>
+                <input type="text" placeholder="Search by or product...">
+            </div>
+            <a href="./sign in or sign up page.html">
+                <i id="hvr" class="fa-solid fa-user-tie"></i>
+            </a>
+            <a href="./bagpage.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+        </div>
+        <div id="options">
+            <a href="">TOP OFFERS</a>
+            <a href="" id="touch">DODY CARE</a>
+            <a href="">CANDELS</a>
+            <a href="">WALLFLOWERS & AIR FRESHENERS</a>
+            <a href="">HAND SOAPS & SANITIZERS</a>
+            <a href="">MEN'S SHOP</a>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- home page tag -->
+    <div>
+        <p><a href="./index.html">HOME</a> / SIGN IN OR SIGN UP</p>
+
+    </div>
+
+    <!-- sign in page img design -->
+
+    <div id="signinimg">
+
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_"
+                alt="">
+        </div>
+
+    </div>
+
+    <h1>Sign In or Sign Up</h1>
+    <div id="boxes">
+
+        <form id="signin">
+            <h2>SIGN IN</h2>
+            <p>If you already have an account with us, sign in below</p>
+            <p>Email Address</p>
+            <input type="text" id="email1" placeholder="Enter your Email" required>
+            <p>Password</p>
+            <input type="text" id="pass1" placeholder="Enter your password" required>
+            <button id="signbtn">SIGN IN</button>
+        </form>
+       
+        <div>
+            <h2>SIGN UP</h2>
+            <p>Create an account to access the best of your favorite</p>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f47b7b9/images/loyalty/boc-launch-prospects_lacb_0.jpg?yocs=s_"
+                alt="">
+           
+                <button><a href="./createaccpage.html">CREATE ACOOUNT</a></button>
+           
+        </div>
+    </div>
+
+
+    <div id="call">
+        <h5>QUESTIONS?</h5>
+        <h6> We’re here for you! Call us at 1-800-756-5005.</h6>
+    </div>
+
+
+    <hr>
+
+    <div id="bootom_part">
+        <div>
+            <h4>GET EMAIL OFFERS & THE LATEST</h4>
+            <h4>NEWS FROM BATH & BODY WORKS!</h4>
+            <p>Enter Email</p>
+            <input type="text">
+            <p>Confirm Email</p>
+            <input type="text">
+            <button>SUBMIT</button>
+            <p>Get connected</p>
+
+        </div>
+        <div>
+            <div>
+                <h3>CUSTOMER CARE</h3>
+                <p>Help & FAQs</p>
+                <p> Shipping</p>
+                <p>Returns & Exchanges</p>
+                <p> Order Tracking</p>
+                <p>Corporate Sales & Gifts</p>
+
+            </div>
+            <div>
+                <h3>MY ACCOUNT</h3>
+                <p>Sign In or Sign Up</p>
+                <p>Order Tracking</p>
+                <p>My Auto Refresh</p>
+                <p>My Love-It List</p>
+            </div>
+            <div>
+                <h3>DISCOVER</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Gift Cards</p>
+                <p>Shop by Fragrance</p>
+                <p>Product Ingredients</p>
+                <p>Get Inspired</p>
+                <p>Diversity, Equity & Inclusion</p>
+            </div>
+            <div>
+                <h3>FIND US</h3>
+                <p>Store Locator</p>
+                <p>Global Locations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- last botton part -->
+
+    <div id="lastbottom">
+        <pre>Terms Of Use Privacy Policy Security Bug Report States Privacy Rights (Certain States) Do Not Sell or Share My Personal Information (Certain States) Transparency in Supply Chains</pre>
+        <pre>Targeted Ad Preferences (Certain States) Limit the Use of My Sensitive Personal Information (California)</pre>
+        <p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+    </div>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>
+
+<script>
+ let signinbtn=document.querySelector("signbtn");
+
+ let signin=document.querySelector("#signin");
+
+ let users=JSON.parse(localStorage.getItem("userData"))||[];
+
+
+ signin.addEventListener("submit",function(event){
+
+    event.preventDefault();
+
+    let count=0;
+
+    let temp;
+    
+    users.forEach(function(el){
+
+       if(el.email === signin.email1.value){
+        count++;
+
+        temp=el;
+
+        localStorage.setItem("loggeduser",JSON.stringify(el))
+       }
+
+    });
+
+    if(count==0){
+        alert("user not resistred")
+    }else{
+    
+        if(temp.password != signin.pass1.value){
+            alert("Wrong password!")
+        }else{
+          alert("login sucessful!");
+          window.location.assign("./index.html")
+        }
+
+    }
+
+
+ })
+
+
+
+
+
+
+</script>
