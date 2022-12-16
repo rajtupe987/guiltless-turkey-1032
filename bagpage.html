@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
     <style>
-         /* nav bar-top part  */
-         * {
+        /* nav bar-top part  */
+        * {
             box-sizing: border-box;
         }
 
@@ -80,7 +81,8 @@
             font-size: 25px;
             color: black;
         }
-        #logo>a:hover{
+
+        #logo>a:hover {
             color: blue;
         }
 
@@ -107,19 +109,148 @@
 
         /* adv part */
 
-        #adv{
-            background-color:#e6f5ff ;
+        #adv {
+            background-color: #e6f5ff;
             text-align: center;
-           padding-top: 1px;
-           padding-bottom: 1px;
-           color: rgb(122, 122, 245);
+            padding-top: 1px;
+            padding-bottom: 1px;
+            color: rgb(122, 122, 245);
+        }
+
+
+        #fav-container {
+            width: 90%;
+            margin-top: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #fav-container>div {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            padding: 3%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #fav-container>div>img {
+            width: 40%;
+            margin-left: 70px;
+
+        }
+
+        /* #fav-container>div>h2,
+        h3,
+        p,
+        h5 {
+            text-align: center;
+        } */
+
+        #fav-container>div>h2{
+            text-align: center;
+            
+        }
+        #fav-container>div>p{
+            text-align: center;
+        }
+
+        #fav-container>div>h3{
+            text-align: center;
+            color: #727272;
+        }
+        #fav-container>div>h5{
+            text-align: center;
+        }
+
+        #fav-container>div>p {
+            color: #ef2929;
+            font-size: 16px;
+        }
+        #fav-container>div>button{
+            background-color: red;
+            color: white;
+            margin-left: 30%;
+            border: none;
+            padding: 2%;
+        }
+
+        /* discripstion part */
+
+        #dispart {
+
+            width: 60%;
+
+            margin: 80px auto;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #dispart>pre {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+        }
+
+
+        /* discripsion part */
+
+        #bootom_part {
+            display: flex;
+            width: 80%;
+            margin: 50px auto;
+            gap: 50px;
+
+        }
+
+        #bootom_part>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+        }
+
+        #bootom_part>div:nth-child(2)>div>p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+            font-size: 17px;
+        }
+
+        #bootom_part>div>p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #727272;
+            font-size: 17px;
+        }
+
+        #bootom_part>h3,
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* last bottom part */
+
+        #lastbottom {
+            height: 200px;
+            width: 100%;
+            background-color: #e6e6e6;
+            padding: 3%;
+        }
+
+        #lastbottom>pre {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #lastbottom>p {
+            text-align: center;
+            color: #727272;
         }
     </style>
 </head>
-<body>
-     <!-- nav bar-top part -->
 
-     <div id="nav">
+<body>
+    <!-- nav bar-top part -->
+
+    <div id="nav">
         <div id="navtop1">
             <p>POINTS. PERKS. EXCLUSIVES.</p>
             <a href="">Join Rewards!</a>
@@ -162,12 +293,147 @@
     <hr>
 
     <div id="adv">
-          
+
         <h2>Perk Alert: All new Rewards members get $10 off any $30 purchase! Join the VIPs</h2>
     </div>
     <div>
         <p><a href="./shoppingpage.html"> -Continue Shopping</a> / YOUR BAG</p>
 
     </div>
+    <h1 id="total">Your a total <span id="fav-total">0</span> elements in the favourites</h1>
+    <div id="fav-container">
+        <!-- Here Append All the Favourites-->
+    </div>
+
+
+    <div id="dispart">
+        <h1>Smash Bath works</h1>
+        <pre>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.From
+             fresh fragrances to soothing skin care, we make finding your perfect something
+        special a happy-memory-making experience. Searching for new seasonal creations or
+          your favorite discontinued scents? We’ve got you covered there, too. Oh! And while
+         you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</pre>
+    </div>
+
+    <!-- line -->
+    <hr>
+
+    <div id="bootom_part">
+        <div>
+            <h4>GET EMAIL OFFERS & THE LATEST</h4>
+            <h4>NEWS FROM BATH & BODY WORKS!</h4>
+            <p>Enter Email</p>
+            <input type="text">
+            <p>Confirm Email</p>
+            <input type="text">
+            <button>SUBMIT</button>
+            <p>Get connected</p>
+
+        </div>
+        <div>
+            <div>
+                <h3>CUSTOMER CARE</h3>
+                <p>Help & FAQs</p>
+                <p> Shipping</p>
+                <p>Returns & Exchanges</p>
+                <p> Order Tracking</p>
+                <p>Corporate Sales & Gifts</p>
+
+            </div>
+            <div>
+                <h3>MY ACCOUNT</h3>
+                <p>Sign In or Sign Up</p>
+                <p>Order Tracking</p>
+                <p>My Auto Refresh</p>
+                <p>My Love-It List</p>
+            </div>
+            <div>
+                <h3>DISCOVER</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Gift Cards</p>
+                <p>Shop by Fragrance</p>
+                <p>Product Ingredients</p>
+                <p>Get Inspired</p>
+                <p>Diversity, Equity & Inclusion</p>
+            </div>
+            <div>
+                <h3>FIND US</h3>
+                <p>Store Locator</p>
+                <p>Global Locations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- last botton part -->
+
+    <div id="lastbottom">
+        <pre>Terms Of Use Privacy Policy Security Bug Report States Privacy Rights (Certain States) Do Not Sell or Share My Personal Information (Certain States) Transparency in Supply Chains</pre>
+        <pre>Targeted Ad Preferences (Certain States) Limit the Use of My Sensitive Personal Information (California)</pre>
+        <p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
+    </div>
+
 </body>
+
 </html>
+
+
+<script>
+    let favdata = JSON.parse(localStorage.getItem("favourites")) || [];
+
+    display(favdata);
+    let bag = [];
+
+    display(favdata)
+    function display(data) {
+        document.querySelector("#fav-container").textContent = null;
+        data.forEach(function (el, index) {
+
+
+            let card = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", el.avatar)
+
+            let title = document.createElement("h2");
+            title.innerText = el.title;
+
+            let catagory = document.createElement("h3");
+            catagory.innerText = el.catagory;
+
+            let price = document.createElement("h5");
+            price.innerText = el.price;
+
+            let discripcion = document.createElement("p");
+            discripcion.innerText = el.Desrciption;
+
+            let btn = document.createElement("button");
+
+            btn.innerText = "Remove";
+            btn.addEventListener("click", function () {
+
+                let favdata = JSON.parse(localStorage.getItem("favourites")) || [];
+
+
+                favdata.splice(index, 1)
+                localStorage.setItem("favourites", JSON.stringify(favdata));
+
+                display(favdata);
+                alert("cart has been removed")
+            })
+
+            card.append(img, title, catagory, price, discripcion, btn)
+
+            document.querySelector("#fav-container").append(card);
+
+        })
+
+        document.querySelector("#fav-total").innerText = data.length;
+
+    }
+
+
+
+
+
+</script>
