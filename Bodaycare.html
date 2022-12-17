@@ -243,24 +243,29 @@
     }
 
 
-    #products>div>h2{
+    #products>div>h2 {
         text-align: center;
     }
-    #products>div>h3{
+
+    #products>div>h3 {
         text-align: center;
         color: #727272;
     }
-    #products>div>p{
+
+    #products>div>p {
         text-align: center;
     }
-    #products>div>h4{
+
+    #products>div>h4 {
         text-align: center;
     }
-    #products>div>p{
+
+    #products>div>p {
         font-size: 16px;
         color: red;
     }
-    #products>div>button{
+
+    #products>div>button {
         color: white;
         background-color: rgb(58, 58, 58);
         padding: 6px 55px 6px 55px;
@@ -331,44 +336,44 @@
     <hr>
     <div id="select">
 
-        <select name="" id="">
+        <!-- <select name="" id="">
 
             <option value="">PRODUCT TYPE</option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
-        </select>
+        </select> -->
 
-        <select name="" id="">
+        <!-- <select name="" id="">
             <option value="">FRAGRANCE NAME</option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
-        </select>
-        <select name="" id="">
+        </select> -->
+        <select name="" id="selcatagory">
 
             <option value="">FRAGRANCE CATEGORY</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="Fragrance Mist">Fragrance Mist</option>
+            <option value="face & body wash">face & body wash</option>
+            <option value="Body cream">Body cream</option>
+            <option value="Oil mist">Oil mist</option>
+            <option value="Foam Bath">Foam Bath</option>
         </select>
-        <select name="" id="">
+        <select name="" id="selfil"  onchange="Sort()">
 
             <option value="">SORT BY</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="price Low to High">price Low to High</option>
+            <option value="price High to Low">price High to Low</option>
+
         </select>
     </div>
 
 
 
     <div id="products">
-        
+
     </div>
 
 
@@ -923,7 +928,7 @@
     ]
 
 
-let bag=[];
+    let bag = [];
 
     display(proData)
     function display(data) {
@@ -988,6 +993,42 @@ let bag=[];
         })
 
     }
+
+
+
+
+
+    let filter = document.querySelector("#selcatagory");
+
+    filter.addEventListener("change", function () {
+
+        if (filter.value == "") {
+            display(proData);
+        } else {
+            let filteredData = proData.filter(function (el) {
+                return el.catagory === filter.value
+            })
+            display(filteredData)
+        }
+
+    })
+
+
+
+    function Sort() {
+
+        let x = document.querySelector("#selfil").value;
+
+        if (x === "price High to Low") {
+            proData.sort((a, b) => b.price - a.price)
+        } else if (x === "price Low to High") {
+            proData.sort((a, b) => a.price - b.price)
+        }
+
+        //console.log(data)
+        display(proData)
+    }
+
 
 
 
