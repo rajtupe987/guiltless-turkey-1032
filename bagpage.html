@@ -120,11 +120,12 @@
 
         #fav-container {
             width: 90%;
-            margin-top: 50px auto;
+            margin-top: 50px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap:15px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-left: 4%;
         }
 
         #fav-container>div {
@@ -139,12 +140,7 @@
 
         }
 
-        /* #fav-container>div>h2,
-        h3,
-        p,
-        h5 {
-            text-align: center;
-        } */
+       
 
         #fav-container>div>h2{
             text-align: center;
@@ -300,7 +296,8 @@
         <p><a href="./shoppingpage.html"> -Continue Shopping</a> / YOUR BAG</p>
 
     </div>
-    <h1 id="total">Your a total <span id="fav-total">0</span> elements in the favourites</h1>
+    <h1 id="total">Your a total -<span id="fav-total">0</span> elements in the favourites</h1>
+    <h2 id="totalprice">Your total bill -<span id="fav-sum"></span></h2>
     <div id="fav-container">
         <!-- Here Append All the Favourites-->
     </div>
@@ -386,6 +383,7 @@
 
     display(favdata)
     function display(data) {
+        let total=0;
         document.querySelector("#fav-container").textContent = null;
         data.forEach(function (el, index) {
 
@@ -421,13 +419,14 @@
                 display(favdata);
                 alert("cart has been removed")
             })
-
+            
             card.append(img, title, catagory, price, discripcion, btn)
 
             document.querySelector("#fav-container").append(card);
-
+           
+            total+=el.price;
         })
-
+         document.querySelector("#fav-sum").innerText=total;
         document.querySelector("#fav-total").innerText = data.length;
 
     }
