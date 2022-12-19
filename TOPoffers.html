@@ -154,6 +154,10 @@
             border: none;
             margin-left: 30%;
         }
+        #topoffer>div>button>a{
+            color: white;
+            text-decoration: none;
+        }
 
         #topoffer>div>button:hover {
             background-color: #bababa;
@@ -316,7 +320,7 @@
             <h2>All Full-Size Body Care</h2>
             <p>2433</p>
 
-            <button>SHOP</button>
+            <button><a href="./Bodaycare.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw61624da4/images/Christmas2022/diff_innovation_c1_ss.jpg?yocs=o_s_"
@@ -324,7 +328,7 @@
             <h2>All Hand Soaps</h2>
             <p>1333</p>
 
-            <button>SHOP</button>
+            <button><a href="./hands&soappage.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw7afb083a/images/Christmas2022/sp_holtrads-gifting_c1_ss.jpg?yocs=o_s_"
@@ -332,14 +336,14 @@
             <h2>Wallflowers Fragrance</h2>
             <p>2999</p>
 
-            <button>SHOP</button>
+            <button><a href="./wallflowerspage.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6687083f/images/Christmas2022/bc_hol-trads_c1_ss.jpg?yocs=o_s_"
                 alt="">
             <h2>Hand Sanitizer 5-Packs</h2>
             <p>3000</p>
-            <button>SHOP</button>
+            <button><a href="./hands&soappage.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc685d88f/images/Christmas2022/cndl_sw-sb-breadth_c1_ss.jpg?yocs=o_s_"
@@ -347,7 +351,7 @@
             <h2>Single Wick Candles</h2>
             <p>2999</p>
 
-            <button>SHOP</button>
+            <button><a href="./candlespage.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf285eec9/images/Christmas2022/diff_crs_c1_ss.jpg?yocs=o_s_"
@@ -355,7 +359,7 @@
             <h2>Room Sprays</h2>
             <p>4999</p>
 
-            <button>SHOP</button>
+            <button><a href="./candlespage.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc5e8c8b5/images/Christmas2022/bc_barsoapss_c1_ss.jpg?yocs=o_s_"
@@ -363,7 +367,7 @@
             <h2>Shea Butter Cleansing</h2>
             <p>5999</p>
 
-            <button>SHOP</button>
+            <button><a href="./Men'spage.html">SHOP</a></button>
         </div>
         <div>
             <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6310a4a8/images/Christmas2022/bc_travel_c1_ss.jpg?yocs=o_s_"
@@ -371,7 +375,7 @@
             <h2>Travel, Hand & Lip Care</h2>
             <p>1999</p>
 
-            <button>SHOP</button>
+            <button><a href="./candlespage.html">SHOP</a></button>
         </div>
     </div>
 
@@ -397,17 +401,15 @@
     <hr>
 
     <div id="bootom_part">
-        <div>
+        <form id="fom">
             <h4>GET EMAIL OFFERS & THE LATEST</h4>
             <h4>NEWS FROM BATH & BODY WORKS!</h4>
             <p>Enter Email</p>
-            <input type="text">
+            <input type="text" placeholder="Enter your Email">
             <p>Confirm Email</p>
-            <input type="text">
+            <input type="text" placeholder="Conferm your Email">
             <button>SUBMIT</button>
-            <p>Get connected</p>
-
-        </div>
+        </form>
         <div>
             <div>
                 <h3>CUSTOMER CARE</h3>
@@ -454,3 +456,11 @@
 </body>
 
 </html>
+<script>
+
+document.querySelector("#fom").addEventListener("submit",function(){
+
+alert("Email has been Sent to your email account")
+})
+
+</script>
