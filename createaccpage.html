@@ -81,7 +81,8 @@
             font-size: 25px;
             color: black;
         }
-        #logo>a:hover{
+
+        #logo>a:hover {
             color: blue;
         }
 
@@ -115,34 +116,38 @@
 
         }
 
-        h1{
+        h1 {
             text-align: center;
         }
-        form{
+
+        form {
             height: auto;
             width: 35%;
             margin: 50px auto;
-        
+
         }
-        form>input{
+
+        form>input {
             width: 100%;
             padding: 3%;
         }
-        form>button{
-            margin-top:50px;
-            padding:  10px 40px 10px 40px;
+
+        form>button {
+            margin-top: 50px;
+            padding: 10px 40px 10px 40px;
             margin-left: 28%;
             border: none;
             color: white;
             background-color: black;
         }
-        form>button:hover{
+
+        form>button:hover {
             color: black;
             background-color: rgb(227, 227, 227);
-            
+
 
         }
-        
+
         #call {
             height: 150px;
             text-align: center;
@@ -162,7 +167,7 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #727272;
         }
-        
+
         #bootom_part {
             display: flex;
             width: 80%;
@@ -244,8 +249,8 @@
 
             <a href="./sign in or sign up page.html"> <i id="hvr" class="fa-solid fa-user-tie"></i></a>
             <a href="./bagpage.html"> <i class="fa-solid fa-bag-shopping"></i></a>
-           
-           
+
+
 
         </div>
         <div id="options">
@@ -265,7 +270,7 @@
     </div>
 
 
-   <!-- img part -->
+    <!-- img part -->
     <div id="signinimg">
 
         <div>
@@ -274,23 +279,23 @@
         </div>
 
     </div>
- 
+
 
     <!-- create account page -->
 
 
     <h1>Create an Account</h1>
-    
+
 
     <form id="signup">
         <p>First Name</p>
-        <input type="text" id="fname"  placeholder="Enter your first name" required>
+        <input type="text" id="fname" placeholder="Enter your first name" required>
 
         <p>Last Name</p>
-        <input type="text" id="lname" placeholder="Enter your last name" required >
+        <input type="text" id="lname" placeholder="Enter your last name" required>
 
         <p>Email</p>
-        <input type="text" id="email" placeholder="Enter your email" required >
+        <input type="text" id="email" placeholder="Enter your email" required>
 
         <p>Confirm Email</p>
         <input type="text" id="cemail" placeholder="Confirm your name" required>
@@ -302,13 +307,13 @@
         <input type="text" id="pass" placeholder="create your password" required>
 
         <p>Reenter password</p>
-         <input type="text" id="repass" placeholder="Renter your password" required>
-        
+        <input type="text" id="repass" placeholder="Renter your password" required>
+
         <button id="create">CREATE ACCOUNT</button>
-       
+
     </form>
-        
-    
+
+
     <!-- call part -->
 
     <div id="call">
@@ -383,84 +388,92 @@
 <script>
 
 
-let  signupbtn=document.querySelector("#create");
-let signUp=document.querySelector("#signup");
+    let signupbtn = document.querySelector("#create");
+    let signUp = document.querySelector("#signup");
 
-let users=JSON.parse(localStorage.getItem("userData"))||[];
+    let users = JSON.parse(localStorage.getItem("userData")) || [];
 
-signUp.addEventListener("submit",function(event){
- event.preventDefault();
+    signUp.addEventListener("submit", function (event) {
+        event.preventDefault();
 
- let count=0;
- users.forEach(function(el){
+        let count = 0;
+        users.forEach(function (el) {
 
-    if(el.email===document.querySelector("#email").value){
-        count++;
-    }
- });
-
-
- if(count > 0){
-    alert("User already resistered")
- }else{
+            if (el.email === document.querySelector("#email").value) {
+                count++;
+            }
+        });
 
 
-    if(document.querySelector("#pass").value != document.querySelector("#repass").value){
-        alert("Password do not matched")
-    }else{
-
-        let user={
-            fname:signUp.fname.value,
-            lname:signUp.lname.value,
-            email:signUp.email.value,
-            cemail:signUp.cemail.value,
-            phone:signUp.phone.value,
-            password:signUp.pass.value,
-            repass:signUp.repass.value
-        };
-        users.push(user);
-
-        localStorage.setItem("userData",JSON.stringify(users));
-        alert("Sign Up Succesfull");
-        
-
-        signUp.reset();
-    }
- }
-})
+        if (count > 0) {
+            alert("User already resistered")
+        } else {
 
 
+            if (document.querySelector("#pass").value != document.querySelector("#repass").value) {
+                alert("Password do not matched")
+            } else {
+                     let fname=document.querySelector("#fname").value;
+                     let lname=document.querySelector("#lname").value;
+                     let email=document.querySelector("#email").value;
+                     let cemail=document.querySelector("#cemail").value;
+                     let phone=document.querySelector("#phone").value;
+                     let password=document.querySelector("#pass").value;
+                     let repass=document.querySelector("#repass").value;
+                let user = {
+                    fname,
+                    lname,
+                    email,
+                    cemail,
+                    phone,
+                    password,
+                    repass
+                };
+                users.push(user);
+
+                localStorage.setItem("userData", JSON.stringify(users));
+                localStorage.setItem('fname', fname);
+             
+                alert("Sign Up Succesfull");
 
 
-
-
-
-
-
-
+                signUp.reset();
+            }
+        }
+    })
 
 
 
 
-document.querySelector("form",function(event){
-
-    event.preventDefault();
- 
-    let fname=document.querySelector("#fname").value;
-
-    let lname=document.querySelector("#lname"),value;
-
-    let email=document.querySelector("#email").value;
-
-    let cemail=document.querySelector("#cemail").value;
-
-    let phone=document.querySelector("#phone").value;
-
-    let password=document.querySelector("#pass").value;
 
 
 
-})
+
+
+
+
+
+
+
+    document.querySelector("form", function (event) {
+
+        event.preventDefault();
+
+        let fname = document.querySelector("#fname").value;
+
+        let lname = document.querySelector("#lname"), value;
+
+        let email = document.querySelector("#email").value;
+
+        let cemail = document.querySelector("#cemail").value;
+
+        let phone = document.querySelector("#phone").value;
+
+        let password = document.querySelector("#pass").value;
+
+
+
+    })
 
 
 

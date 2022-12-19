@@ -64,7 +64,7 @@
         /* app logo part nav part */
 
 
-        /* #logoline {
+        /* #logoline>p{
             height: 150px;
             width: 100%;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -72,15 +72,16 @@
 
 
         #logo {
+            
             display: flex;
             margin-top: 15px;
-            font-size: 25px;
+            font-size: 20px;
             gap: 20px;
         }
 
         #logo>img {
             width: 20%;
-            margin-left: 520px;
+            margin-left: 250px;
         }
 
         #logo>div>input {
@@ -95,6 +96,11 @@
             margin-left: 20px;
             font-size: 25px;
             color: black;
+        }
+        #logo>p,span{
+            font-size: 20px;
+            font-weight: bold;
+            
         }
 
         #logo>a:hover {
@@ -119,6 +125,7 @@
 
         #options>a {
             text-decoration: none;
+            color: rgb(66, 66, 66);
         }
 
         /* #name {
@@ -596,29 +603,34 @@
         }
 
         #logo {
+            height: 50px;
             display: flex;
+            
             margin-top: 8px;
-            font-size: 16px;
-            gap: 15px;
+            font-size: 13px;
+            gap: 10px;
         }
 
         #logo>img {
-            width: 30%;
-            margin-left: 50px;
+            width: 20%;
+            margin-left: 40px;
         }
 
         #logo>div>input {
             margin-top: 20px;
-            padding: 2%;
-            padding-right: 5px;
-            font-size: 15px;
+            padding: 1%;
+          
+            font-size: 10px;
         }
 
         #logo>a {
             margin-top: 35px;
             margin-left: 10px;
-            font-size: 20px;
+            font-size: 10px;
             color: black;
+        }
+        #logo>p,span{
+            font-size: 10px;
         }
 
         #logo>a:hover {
@@ -1082,7 +1094,7 @@
 
         }
         /* medium screen */
-        @media screen and (min-width:400px) and (max-width:899px) {
+        @media screen and (min-width:400px) and (max-width:999px) {
          
             #nav {
             overflow: hidden;
@@ -1116,22 +1128,24 @@
         }
 
         #logo {
+            height: 70px;
             display: flex;
             margin-top: 10px;
-            font-size: 20px;
-            gap: 20px;
+            font-size: 15px;
+            gap: 10px;
         }
 
         #logo>img {
-            width: 20%;
-            margin-left: 100px;
+            width: 15%;
+            margin-left: 50px;
         }
 
         #logo>div>input {
             margin-top: 20px;
-            padding: 3%;
-            padding-right: 50px;
-            font-size: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            font-size: 10px;
         }
 
         #logo>a {
@@ -1349,9 +1363,10 @@
 
         #buttons>div:nth-child(1) {
             height: auto;
-            width: 90%;
-            margin-left: 80px;
+            width: 30%;
+            margin-left: 230px;
             display: flex;
+            flex-direction: column;
             gap: 20px;
 
 
@@ -1359,9 +1374,10 @@
 
         #buttons>div:nth-child(2) {
             height: auto;
-            width: 70%;
-            margin-left: 200px;
+            width: 30%;
+            margin-left: 230px;
             display: flex;
+            flex-direction: column;
             gap: 20px;
             margin-top: 20px;
         }
@@ -1402,8 +1418,10 @@
             height: auto;
             width: 86%;
             display: flex;
+            flex-direction: column;
             margin-top: 40px;
             margin-left: 23%;
+            gap: 20px;
         }
 
         #button2nd>div:nth-child(1) {
@@ -1419,7 +1437,7 @@
         #button2nd>div:nth-child(2) {
             height: auto;
             width: 100%;
-            margin-right: 50px;
+           margin-left: 105px;
             display: flex;
           
 
@@ -1544,9 +1562,11 @@
 
         #bootom_part {
             display: flex;
-            width: 60%;
-            margin: 50px auto;
-            gap: 50px;
+            flex-direction: column;
+            width: 50%;
+            margin: 50px;
+            margin-left: 50px;
+            gap: 10px;
 
         }
 
@@ -1629,9 +1649,9 @@
     <!-- app logo part nav part -->
 
     <div id="logoline">
-
+            
         <div id="logo">
-
+            <p>Welcome to Smash Bath - <span id="getname">your name</span></p>
             <img src="./Smash Bath1.png" alt="">
             <div>
                 <input type="text" placeholder="Search by or product...">
@@ -1651,17 +1671,6 @@
 
     </div>
     <hr>
-
-
-
-    <!-- hover -->
-
-    <!-- <div id="name">
-        <p>raj tupe great</p>
-        <p>raj tupe great</p>
-        <p>raj tupe great</p>
-        <p>raj tupe great</p>
-    </div> -->
 
 
     <!-- big image part -->
@@ -1947,28 +1956,27 @@
 
     <div id="dispart">
         <h1>Smash Bath works</h1>
-        <pre>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.From
+        <p>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.From
                  fresh fragrances to soothing skin care, we make finding your perfect something
             special a happy-memory-making experience. Searching for new seasonal creations or
               your favorite discontinued scents? We’ve got you covered there, too. Oh! And while
-             you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</pre>
+             you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</p>
     </div>
 
     <!-- line -->
     <hr>
 
     <div id="bootom_part">
-        <div>
+       
+        <form id="fom">
             <h4>GET EMAIL OFFERS & THE LATEST</h4>
             <h4>NEWS FROM BATH & BODY WORKS!</h4>
             <p>Enter Email</p>
-            <input type="text">
+            <input type="text" placeholder="Enter your Email">
             <p>Confirm Email</p>
-            <input type="text">
+            <input type="text" placeholder="Conferm your Email">
             <button>SUBMIT</button>
-            <p>Get connected</p>
-
-        </div>
+        </form>
         <div>
             <div>
                 <h3>CUSTOMER CARE</h3>
@@ -2007,8 +2015,8 @@
     <!-- last botton part -->
 
     <div id="lastbottom">
-        <pre>Terms Of Use Privacy Policy Security Bug Report States Privacy Rights (Certain States) Do Not Sell or Share My Personal Information (Certain States) Transparency in Supply Chains</pre>
-        <pre>Targeted Ad Preferences (Certain States) Limit the Use of My Sensitive Personal Information (California)</pre>
+        <p>Terms Of Use Privacy Policy Security Bug Report States Privacy Rights (Certain States) Do Not Sell or Share My Personal Information (Certain States) Transparency in Supply Chains</p>
+        <p>Targeted Ad Preferences (Certain States) Limit the Use of My Sensitive Personal Information (California)</p>
         <p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p>
     </div>
 
@@ -2022,6 +2030,13 @@
 
 <script>
 
-    document.querySelector("#new>span").textContent = localStorage.getItem("username")
+
+
+    document.querySelector("#getname").textContent = localStorage.getItem("fname")
+
+    document.querySelector("#fom").addEventListener("submit",function(){
+
+        alert("Email has been Sent to your email account")
+    })
 
 </script>
