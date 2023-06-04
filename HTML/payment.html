@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="./CSS/createacc.css">
 </head>
-
+<link rel="stylesheet" href="../CSS/payment.css">
 <body>
-    <!-- nav bar-top part -->
+     <!-- nav bar-top part -->
 
-    <div id="nav">
+     <div id="nav">
         <div id="navtop1">
             <p>POINTS. PERKS. EXCLUSIVES.</p>
             <a href="">Join Rewards!</a>
@@ -36,11 +34,12 @@
             <div>
                 <input type="text" placeholder="Search by or product...">
             </div>
-
-            <a href="./sign in or sign up page.html"> <i id="hvr" class="fa-solid fa-user-tie"></i></a>
-            <a href="./bagpage.html"> <i class="fa-solid fa-bag-shopping"></i></a>
-
-
+            <a href="./sign in or sign up page.html">
+                <i id="hvr" class="fa-solid fa-user-tie"></i>
+            </a>
+            <a href="./bagpage.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
 
         </div>
         <div id="options">
@@ -54,63 +53,29 @@
 
     </div>
     <hr>
-    <div>
-        <p><a href="./index.html">HOME /</a> <a href="./admin.html">admin</a>/ CREATE AN ACCOUNT</p>
 
+
+    <form>
+        <input type="text" id="name" placeholder="Enter First Name"/>
+        <input type="text" id="lname" placeholder="Enter Last Name"/>
+        <input type="text" id="address" placeholder="Enter Your Address"/>
+        
+        <input type="number" id="cardNo"  placeholder="Enter Card Number"/>
+        <input type="number" id="cardCvv"  placeholder="Enter CVV"/>
+        <input type="submit" value="Confirm" />
+      </form>
+  
+
+      <div id="dispart">
+        <h1>Smash Bath works</h1>
+        <pre>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.
+             fresh fragrances to soothing skin care, we make finding your perfect something
+        special a happy-memory-making experience. Searching for new seasonal creations or
+          your favorite discontinued scents? We’ve got you covered there, too. Oh! And while
+         you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</pre>
     </div>
 
-
-    <!-- img part -->
-    <div id="signinimg">
-
-        <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6f07f823/images/banners/create-account_d.png?yocs=s_"
-                alt="">
-        </div>
-
-    </div>
-
-
-    <!-- create account page -->
-
-
-    <h1>Create an Account</h1>
-
-
-    <form id="signup">
-        <p>First Name</p>
-        <input type="text" id="fname" placeholder="Enter your first name" required>
-
-        <p>Last Name</p>
-        <input type="text" id="lname" placeholder="Enter your last name" required>
-
-        <p>Email</p>
-        <input type="text" id="email" placeholder="Enter your email" required>
-
-        <p>Confirm Email</p>
-        <input type="text" id="cemail" placeholder="Confirm your name" required>
-
-        <p>Phone</p>
-        <input type="text" id="phone" placeholder="Enter your Phone" required>
-
-        <p>Password</p>
-        <input type="text" id="pass" placeholder="create your password" required>
-
-        <p>Reenter password</p>
-        <input type="text" id="repass" placeholder="Renter your password" required>
-
-        <button id="create">CREATE ACCOUNT</button>
-
-    </form>
-
-
-    <!-- call part -->
-
-    <div id="call">
-        <h5>QUESTIONS?</h5>
-        <h6> We’re here for you! Call us at 1-800-756-5005.</h6>
-    </div>
-
+    <!-- line -->
     <hr>
 
     <div id="bootom_part">
@@ -169,13 +134,10 @@
     </div>
 
 
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
-
 </html>
+<script src="../SCRIPT/payment.js">
 
-<script src="./SCRIPT/creataccpage.js">
 
 
 </script>

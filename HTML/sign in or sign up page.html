@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./CSS/bag.css">
+ <link rel="stylesheet" href="../CSS/signin&singnuppage.css">
 </head>
 
 <body>
@@ -33,11 +33,8 @@
         <div id="logo">
 
             <img src="./Smash Bath1.png" alt="">
-            <div id="search-bar">
-                <div>
-                    <input type="text" id="search-input" placeholder="Enter Search Text">
-                    <button id="search-btn">Search</button>
-                </div>
+            <div>
+                <input type="text" placeholder="Search by or product...">
             </div>
             <a href="./sign in or sign up page.html">
                 <i id="hvr" class="fa-solid fa-user-tie"></i>
@@ -59,47 +56,54 @@
     </div>
     <hr>
 
-    <div id="adv">
-
-        <h2>Perk Alert: All new Rewards members get $10 off any $30 purchase! Join the VIPs</h2>
-    </div>
+    <!-- home page tag -->
     <div>
-        <p><a href="./Bodaycare.html"> -Continue Shopping</a> / YOUR BAG</p>
+        <p><a href="./index.html">HOME /</a><a href="./admin.html">admin</a> / SIGN IN OR SIGN UP</p>
 
     </div>
 
+    <!-- sign in page img design -->
 
-    <h1 id="total">Your  total <span id="fav-total">0</span> Products in the favourites</h1>
-    <h2 id="totalprice">Your total bill =<span id="fav-sum"></span></h2>
-    
+    <div id="signinimg">
 
-    </button>
-    <div id="fav-container">
-        <!-- Here Append All the Favourites-->
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_"
+                alt="">
+        </div>
+
     </div>
 
-    <!-- payment page -->
-<div id="finalpart">
- 
-    <h3 id="total2"> total products <span id="prod">0</span></h3>
-    <h3 id="totalprice2">Your total bill =<span id="totalp"></span></h3>
-    <h3 id="tax">SALES TAX = <span id="tax2"></span></h3>
-    <hr>
-    <h3 id="finaltotal">ORDER TOTAL - <span id="ordert"></span></h3>
-    <button id="pay2"><a href="./payment.html">CHECKOUT</a>
+    <h1>Sign In or Sign Up</h1>
+    <div id="boxes">
 
-</div>
-
-    <div id="dispart">
-        <h1>Smash Bath works</h1>
-        <pre>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.From
-             fresh fragrances to soothing skin care, we make finding your perfect something
-        special a happy-memory-making experience. Searching for new seasonal creations or
-          your favorite discontinued scents? We’ve got you covered there, too. Oh! And while
-         you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</pre>
+        <form id="signin">
+            <h2>SIGN IN</h2>
+            <p>If you already have an account with us, sign in below</p>
+            <p>Email Address</p>
+            <input type="text" id="email1" placeholder="Enter your Email" required>
+            <p>Password</p>
+            <input type="text" id="pass1" placeholder="Enter your password" required>
+            <button id="signbtn">SIGN IN</button>
+        </form>
+       
+        <div>
+            <h2>SIGN UP</h2>
+            <p>Create an account to access the best of your favorite</p>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f47b7b9/images/loyalty/boc-launch-prospects_lacb_0.jpg?yocs=s_"
+                alt="">
+           
+                <button><a href="./createaccpage.html">CREATE ACOOUNT</a></button>
+           
+        </div>
     </div>
 
-    <!-- line -->
+
+    <div id="call">
+        <h5>QUESTIONS?</h5>
+        <h6> We’re here for you! Call us at 1-800-756-5005.</h6>
+    </div>
+
+
     <hr>
 
     <div id="bootom_part">
@@ -158,12 +162,12 @@
     </div>
 
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </body>
 
 </html>
 
-
-<script src="./SCRIPT/bagpage.js">
-   
+<script src="../SCRIPT/signin&signup.js">
 
 </script>

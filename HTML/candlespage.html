@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="./CSS/signin&singnuppage.css">
+   <link rel="stylesheet" href="../CSS/candlespage.css">
 </head>
 
 <body>
@@ -33,8 +33,11 @@
         <div id="logo">
 
             <img src="./Smash Bath1.png" alt="">
-            <div>
-                <input type="text" placeholder="Search by or product...">
+            <div id="search-bar">
+                <div>
+                    <input type="text" id="search-input" placeholder="Enter Search Text">
+                    <button id="search-btn">Search</button>
+                </div>
             </div>
             <a href="./sign in or sign up page.html">
                 <i id="hvr" class="fa-solid fa-user-tie"></i>
@@ -55,69 +58,63 @@
 
     </div>
     <hr>
+    
 
-    <!-- home page tag -->
+    <div id="adv">
+
+        <h2>Perk Alert: All new Rewards members get $10 off any $30 purchase! Join the VIPs</h2>
+    </div>
     <div>
-        <p><a href="./index.html">HOME /</a><a href="./admin.html">admin</a> / SIGN IN OR SIGN UP</p>
+        <p><a href="./index.html">HOME</a> / HAND SOAPS & SANITIZERS PAGE</p>
 
     </div>
 
-    <!-- sign in page img design -->
-
-    <div id="signinimg">
-
-        <div>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_"
-                alt="">
-        </div>
-
-    </div>
-
-    <h1>Sign In or Sign Up</h1>
-    <div id="boxes">
-
-        <form id="signin">
-            <h2>SIGN IN</h2>
-            <p>If you already have an account with us, sign in below</p>
-            <p>Email Address</p>
-            <input type="text" id="email1" placeholder="Enter your Email" required>
-            <p>Password</p>
-            <input type="text" id="pass1" placeholder="Enter your password" required>
-            <button id="signbtn">SIGN IN</button>
-        </form>
-       
-        <div>
-            <h2>SIGN UP</h2>
-            <p>Create an account to access the best of your favorite</p>
-            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f47b7b9/images/loyalty/boc-launch-prospects_lacb_0.jpg?yocs=s_"
-                alt="">
-           
-                <button><a href="./createaccpage.html">CREATE ACOOUNT</a></button>
-           
-        </div>
-    </div>
-
-
-    <div id="call">
-        <h5>QUESTIONS?</h5>
-        <h6> We’re here for you! Call us at 1-800-756-5005.</h6>
-    </div>
-
-
+    <h1>Hand Soaps & Sanitizers</h1>
     <hr>
+    <div id="select">
+
+        <select name="" id="selcatagory">
+
+            <option value="">FRAGRANCE CATEGORY</option>
+            <option value="Single Wick Candle">Single Wick Candle</option>
+            <option value="3-Wick Candle">3-Wick Candle</option>
+           
+        </select>
+        <select name="" id="selfil"  onchange="applyFilterAndSort()">
+
+            <option value="">SORT BY</option>
+            <option value="price Low to High">price Low to High</option>
+            <option value="price High to Low">price High to Low</option>
+
+        </select>
+    </div>
+    <div id="prod">
+
+    </div>
+    <div id="dispart">
+        <h1>Smash Bath works</h1>
+        <pre>             Bath and Body Works is your go-to place for gifts & goodies that surprise & delight.From
+             fresh fragrances to soothing skin care, we make finding your perfect something
+        special a happy-memory-making experience. Searching for new seasonal creations or
+          your favorite discontinued scents? We’ve got you covered there, too. Oh! And while
+         you're browsing, shop our latest & greatest selection of lotions, soaps and candles!</pre>
+    </div>
+
+    <!-- line -->
+    <hr>
+   
+
 
     <div id="bootom_part">
-        <div>
+        <form id="fom">
             <h4>GET EMAIL OFFERS & THE LATEST</h4>
             <h4>NEWS FROM BATH & BODY WORKS!</h4>
             <p>Enter Email</p>
-            <input type="text">
+            <input type="text" placeholder="Enter your Email">
             <p>Confirm Email</p>
-            <input type="text">
+            <input type="text" placeholder="Conferm your Email">
             <button>SUBMIT</button>
-            <p>Get connected</p>
-
-        </div>
+        </form>
         <div>
             <div>
                 <h3>CUSTOMER CARE</h3>
@@ -162,12 +159,13 @@
     </div>
 
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 
 </html>
 
-<script src="./SCRIPT/signin&signup.js">
+<script src="../SCRIPT/candle.js">
+
+
 
 </script>

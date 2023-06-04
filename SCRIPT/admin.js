@@ -1,56 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin page</title>
-  <link rel="stylesheet" href="./CSS/admin.css">
-</head>
-
-<body>
-
-    <h1>admin side</h1>
-    <div>
-
-        <table>
-            <!-- Dont change order of columns -->
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>last name</th>
-                    <th>Email</th>
-                    <th>phone</th>
-                    <th>password</th>
-                     <th>Delete</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Append your output here -->
-
-                <!-- <tr>
-    
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-    
-              </tr> -->
-
-            </tbody>
-        </table>
-    </div>
-
-</body>
-
-</html>
-<script>
-    let allusers = JSON.parse(localStorage.getItem("userData")) || [];
+let allusers = JSON.parse(localStorage.getItem("userData")) || [];
 
     console.log(allusers);
 
@@ -100,8 +48,3 @@
 
     }
 
-
-   
-
-
-</script>
