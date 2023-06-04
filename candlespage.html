@@ -774,8 +774,11 @@
         <div id="logo">
 
             <img src="./Smash Bath1.png" alt="">
-            <div>
-                <input type="text" placeholder="Search by or product...">
+            <div id="search-bar">
+                <div>
+                    <input type="text" id="search-input" placeholder="Enter Search Text">
+                    <button id="search-btn">Search</button>
+                </div>
             </div>
             <a href="./sign in or sign up page.html">
                 <i id="hvr" class="fa-solid fa-user-tie"></i>
@@ -818,7 +821,7 @@
             <option value="3-Wick Candle">3-Wick Candle</option>
            
         </select>
-        <select name="" id="selfil"  onchange="Sort()">
+        <select name="" id="selfil"  onchange="applyFilterAndSort()">
 
             <option value="">SORT BY</option>
             <option value="price Low to High">price Low to High</option>
@@ -913,7 +916,7 @@
             "catagory": "3-Wick Candle",
             "price": 2000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "1"
+            "id": "15"
         },
         {
             "createdAt": "2022-12-16T01:23:52.800Z",
@@ -922,7 +925,7 @@
             "catagory": "Single Wick Candle",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "2"
+            "id": "25"
         },
         {
             "createdAt": "2022-12-15T20:10:10.407Z",
@@ -931,7 +934,7 @@
             "catagory": "Single Wick Candle",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "3"
+            "id": "35"
         },
         {
             "createdAt": "2022-12-15T22:48:55.942Z",
@@ -940,7 +943,7 @@
             "catagory": "Single Wick Candle",
             "price": 6000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "4"
+            "id": "45"
         },
         {
             "createdAt": "2022-12-15T19:25:31.464Z",
@@ -949,7 +952,7 @@
             "catagory": "3-Wick Candle",
             "price": 9000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "5"
+            "id": "55"
         },
         {
             "createdAt": "2022-12-15T08:49:10.240Z",
@@ -958,7 +961,7 @@
             "catagory": "3-Wick Candle",
             "price": 14,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "6"
+            "id": "65"
         },
         {
             "createdAt": "2022-12-16T01:48:18.309Z",
@@ -967,7 +970,7 @@
             "catagory": "3-Wick Candle",
             "price": 3000,
             "Desrciption": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-            "id": "7"
+            "id": "75"
         },
         {
             "createdAt": "2022-12-15T20:21:45.284Z",
@@ -976,7 +979,7 @@
             "catagory": "3-Wick Candle",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "8"
+            "id": "85"
         },
         {
             "createdAt": "2022-12-15T13:42:19.097Z",
@@ -985,7 +988,7 @@
             "catagory": "Body cream",
             "price": 9000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "9"
+            "id": "95"
         },
         {
             "createdAt": "2022-12-15T15:05:18.749Z",
@@ -994,7 +997,7 @@
             "catagory": "3-Wick Candle",
             "price": 5000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "10"
+            "id": "105"
         },
         {
             "createdAt": "2022-12-15T17:42:15.562Z",
@@ -1003,7 +1006,7 @@
             "catagory": "Foam Bath",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREEt",
-            "id": "11"
+            "id": "115"
         },
         {
             "createdAt": "2022-12-15T21:23:36.004Z",
@@ -1012,7 +1015,7 @@
             "catagory": "Body cream",
             "price": 4000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "12"
+            "id": "125"
         },
         {
             "createdAt": "2022-12-15T15:01:41.623Z",
@@ -1021,7 +1024,7 @@
             "catagory": "Single Wick Candle",
             "price": 2000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "1"
+            "id": "15"
         },
         {
             "createdAt": "2022-12-16T01:23:52.800Z",
@@ -1030,7 +1033,7 @@
             "catagory": "Single Wick Candle",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "2"
+            "id": "25"
         },
         {
             "createdAt": "2022-12-15T14:26:23.822Z",
@@ -1039,7 +1042,7 @@
             "catagory": "3-Wick Candle",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "13"
+            "id": "135"
         },
         {
             "createdAt": "2022-12-15T20:52:03.897Z",
@@ -1048,7 +1051,7 @@
             "catagory": "Single Wick Candle",
             "price": 8000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "14"
+            "id": "145"
         },
         {
             "createdAt": "2022-12-15T21:33:38.230Z",
@@ -1057,7 +1060,7 @@
             "catagory": "3-Wick Candle",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "15"
+            "id": "155"
         },
         {
             "createdAt": "2022-12-15T13:54:22.429Z",
@@ -1066,7 +1069,7 @@
             "catagory": "3-Wick Candle",
             "price": 1500,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "16"
+            "id": "165"
         },
         {
             "createdAt": "2022-12-16T04:05:01.077Z",
@@ -1075,7 +1078,7 @@
             "catagory": "Single Wick Candle",
             "price": 5900,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "17"
+            "id": "157"
         },
         {
             "createdAt": "2022-12-15T10:11:12.417Z",
@@ -1084,7 +1087,7 @@
             "catagory": "3-Wick Candle",
             "price": 2800,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "18"
+            "id": "185"
         },
         {
             "createdAt": "2022-12-16T01:37:05.794Z",
@@ -1102,7 +1105,7 @@
             "catagory": "3-Wick Candle",
             "price": 7000,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "20"
+            "id": "205"
         },
         {
             "createdAt": "2022-12-15T08:56:34.590Z",
@@ -1111,7 +1114,7 @@
             "catagory": "Single Wick Candle",
             "price": 3400,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "21"
+            "id": "215"
         },
         {
             "createdAt": "2022-12-16T07:00:29.285Z",
@@ -1120,7 +1123,7 @@
             "catagory": "3-Wick Candle",
             "price": 9400,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "22"
+            "id": "225"
         },
         {
             "createdAt": "2022-12-16T06:02:50.534Z",
@@ -1129,7 +1132,7 @@
             "catagory": "Single Wick Candle",
             "price": 8200,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "23"
+            "id": "235"
         },
         {
             "createdAt": "2022-12-16T01:48:18.309Z",
@@ -1138,7 +1141,7 @@
             "catagory": "3-Wick Candle",
             "price": 3000,
             "Desrciption": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-            "id": "7"
+            "id": "75"
         },
         {
             "createdAt": "2022-12-15T20:21:45.284Z",
@@ -1147,7 +1150,7 @@
             "catagory": "Single Wick Candle",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "8"
+            "id": "58"
         },
         {
             "createdAt": "2022-12-15T07:17:49.414Z",
@@ -1156,7 +1159,7 @@
             "catagory": "Single Wick Candle",
             "price": 3400,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "26"
+            "id": "265"
         },
         {
             "createdAt": "2022-12-15T11:04:34.697Z",
@@ -1165,7 +1168,7 @@
             "catagory": "3-Wick Candle",
             "price": 6500,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "27"
+            "id": "275"
         },
         {
             "createdAt": "2022-12-16T05:11:12.368Z",
@@ -1174,7 +1177,7 @@
             "catagory": "Single Wick Candle",
             "price": 7200,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "28"
+            "id": "285"
         },
         {
             "createdAt": "2022-12-15T07:13:01.835Z",
@@ -1183,7 +1186,7 @@
             "catagory": "Single Wick Candle",
             "price": 7200,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "29"
+            "id": "295"
         },
         {
             "createdAt": "2022-12-15T12:11:58.851Z",
@@ -1192,7 +1195,7 @@
             "catagory": "Single Wick Candle",
             "price": 4500,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "30"
+            "id": "305"
         },
         {
             "createdAt": "2022-12-15T21:31:04.429Z",
@@ -1201,7 +1204,7 @@
             "catagory": "Single Wick Candle",
             "price": 6700,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "31"
+            "id": "315"
         },
         {
             "createdAt": "2022-12-16T00:10:26.438Z",
@@ -1210,7 +1213,7 @@
             "catagory": "Single Wick Candle",
             "price": 4100,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "32"
+            "id": "352"
         },
         {
             "createdAt": "2022-12-16T05:06:24.998Z",
@@ -1219,7 +1222,7 @@
             "catagory": "Single Wick Candle",
             "price": 2000,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "33"
+            "id": "335"
         },
         {
             "createdAt": "2022-12-15T11:39:49.911Z",
@@ -1228,7 +1231,7 @@
             "catagory": "Single Wick Candle",
             "price": 1100,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "34"
+            "id": "345"
         },
         {
             "createdAt": "2022-12-15T07:53:15.910Z",
@@ -1237,7 +1240,7 @@
             "catagory": "3-Wick Candle",
             "price": 3300,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "35"
+            "id": "355"
         },
         {
             "createdAt": "2022-12-16T02:12:47.827Z",
@@ -1246,7 +1249,7 @@
             "catagory": "3-Wick Candle",
             "price": 5000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "36"
+            "id": "365"
         },
         {
             "createdAt": "2022-12-15T17:32:36.976Z",
@@ -1255,7 +1258,7 @@
             "catagory": "3-Wick Candle",
             "price": 9500,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "37"
+            "id": "375"
         },
         {
             "createdAt": "2022-12-15T21:27:56.912Z",
@@ -1264,7 +1267,7 @@
             "catagory": "Single Wick Candle",
             "price": 6900,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "38"
+            "id": "385"
         },
         {
             "createdAt": "2022-12-15T11:25:29.874Z",
@@ -1273,7 +1276,7 @@
             "catagory": "Single Wick Candle",
             "price": 5800,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "39"
+            "id": "395"
         },
         {
             "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
@@ -1291,7 +1294,43 @@
             "catagory": "Single Wick Candle",
             "price": 5800,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "39"
+            "id": "395"
+        },
+        {
+            "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb859bf7f/crop/026490235_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+            "title": "Vennila",
+            "catagory": "Single Wick Candle",
+            "price": 7500,
+            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
+            "id": "405"
+        },
+        {
+            "createdAt": "2022-12-15T11:25:29.874Z",
+            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6a9e4cf9/crop/026567794_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+            "title": "Christmas Cookies",
+            "catagory": "Body lotion",
+            "price": 5800,
+            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
+            "id": "395"
+        },
+        {
+            "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb859bf7f/crop/026490235_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+            "title": "Vennila",
+            "catagory": "Single Wick Candle",
+            "price": 7500,
+            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
+            "id": "405"
+        },
+        {
+            "createdAt": "2022-12-15T11:25:29.874Z",
+            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6a9e4cf9/crop/026567794_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+            "title": "Christmas Cookies",
+            "catagory": "Body lotion",
+            "price": 5800,
+            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
+            "id": "395"
         },
         {
             "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
@@ -1309,7 +1348,7 @@
             "catagory": "Body lotion",
             "price": 5800,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "39"
+            "id": "395"
         },
         {
             "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
@@ -1318,43 +1357,7 @@
             "catagory": "Single Wick Candle",
             "price": 7500,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "40"
-        },
-        {
-            "createdAt": "2022-12-15T11:25:29.874Z",
-            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6a9e4cf9/crop/026567794_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-            "title": "Christmas Cookies",
-            "catagory": "Body lotion",
-            "price": 5800,
-            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "39"
-        },
-        {
-            "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb859bf7f/crop/026490235_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-            "title": "Vennila",
-            "catagory": "Single Wick Candle",
-            "price": 7500,
-            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "40"
-        },
-        {
-            "createdAt": "2022-12-15T11:25:29.874Z",
-            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6a9e4cf9/crop/026567794_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-            "title": "Christmas Cookies",
-            "catagory": "Body lotion",
-            "price": 5800,
-            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "39"
-        },
-        {
-            "createdAt": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc1518184/crop/026438827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-            "avatar": "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.21a/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb859bf7f/crop/026490235_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-            "title": "Vennila",
-            "catagory": "Single Wick Candle",
-            "price": 7500,
-            "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "40"
+            "id": "405"
         },
         {
             "createdAt": "2022-12-16T01:48:18.309Z",
@@ -1363,7 +1366,7 @@
             "catagory": "Single Wick Candle",
             "price": 3000,
             "Desrciption": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-            "id": "7"
+            "id": "75"
         },
         {
             "createdAt": "2022-12-15T20:21:45.284Z",
@@ -1372,7 +1375,7 @@
             "catagory": "Single Wick Candle",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "8"
+            "id": "855"
         },
 
     ]
@@ -1447,41 +1450,99 @@
     
     }
 
-    let filter = document.querySelector("#selcatagory");
+    // let filter = document.querySelector("#selcatagory");
 
-    filter.addEventListener("change", function () {
+    // filter.addEventListener("change", function () {
 
-        if (filter.value == "") {
-            display(proData);
-        } else {
-            let filteredData = proData.filter(function (el) {
-                return el.catagory === filter.value
-            })
-            display(filteredData)
-        }
+    //     if (filter.value == "") {
+    //         display(proData);
+    //     } else {
+    //         let filteredData = proData.filter(function (el) {
+    //             return el.catagory === filter.value
+    //         })
+    //         display(filteredData)
+    //     }
 
-    })
+    // })
 
 
 
-    function Sort() {
+    // function Sort() {
 
-        let x = document.querySelector("#selfil").value;
+    //     let x = document.querySelector("#selfil").value;
 
-        if (x === "price High to Low") {
-            proData.sort((a, b) => b.price - a.price)
-        } else if (x === "price Low to High") {
-            proData.sort((a, b) => a.price - b.price)
-        }
+    //     if (x === "price High to Low") {
+    //         proData.sort((a, b) => b.price - a.price)
+    //     } else if (x === "price Low to High") {
+    //         proData.sort((a, b) => a.price - b.price)
+    //     }
 
-        //console.log(data)
-        display(proData)
+    //     //console.log(data)
+    //     display(proData)
+    // }
+
+
+    let filter2 = document.querySelector("#selcatagory");
+    let sortSelect = document.querySelector("#selfil");
+
+    filter2.addEventListener("change", function () {
+        applyFilterAndSort();
+    });
+
+    sortSelect.addEventListener("change", function () {
+        applyFilterAndSort();
+    });
+
+    function applyFilterAndSort() {
+        let filteredData = proData.filter(function (el) {
+            return el.catagory === filter2.value || filter2.value === "";
+        });
+
+        let sortProperty = sortSelect.value;
+
+        filteredData.sort((a, b) => {
+            if (sortProperty === "price High to Low") {
+                return b.price - a.price;
+            } else if (sortProperty === "price Low to High") {
+                return a.price - b.price;
+            }
+            //else {
+            //   // Handle sorting for other properties
+            //   return a[sortProperty].localeCompare(b[sortProperty]);
+            // }
+        });
+
+        display(filteredData);
     }
+
 
     document.querySelector("#fom").addEventListener("submit",function(){
 
 alert("Email has been Sent to your email account")
 })
+
+
+let search = document.getElementById("search-btn");
+    search.addEventListener("click", () => {
+        let searchInput = document.getElementById("search-input")
+        searchInput = searchInput.value;
+        searchInput = searchInput.toLowerCase();
+        console.log(searchInput)
+        let filterData = proData.filter((element) => {
+            if (element.title.toLowerCase().includes(searchInput) || element.catagory.toLowerCase().includes(searchInput))
+                return true;
+            else
+                return false;
+        })
+        console.log(filterData);
+        display(filterData)
+    })
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", () => {
+        document.getElementById("from").value = "";
+        document.getElementById("to").value = "";
+        display(proData);
+    })
 
 
 </script>

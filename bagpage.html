@@ -65,7 +65,7 @@
 
         #logo>img {
             width: 20%;
-            margin-left: 520px;
+            margin-left: 400px;
         }
 
         #logo>div>input {
@@ -196,7 +196,12 @@
             gap: 50px;
 
         }
+        #bootom_part>div:nth-child(1) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
 
+        }
         #bootom_part>div:nth-child(2) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -270,6 +275,16 @@
             text-decoration: none;
             color: rgb(255, 255, 255);
         }
+        #search-bar>div{
+            margin-top: 10px;
+
+        }
+        #search-bar>div>input{
+            padding: 2%;
+        }
+        #search-bar>div>button{
+            padding: 2%;
+        }
     </style>
 </head>
 
@@ -295,8 +310,11 @@
         <div id="logo">
 
             <img src="./Smash Bath1.png" alt="">
-            <div>
-                <input type="text" placeholder="Search by or product...">
+            <div id="search-bar">
+                <div>
+                    <input type="text" id="search-input" placeholder="Enter Search Text">
+                    <button id="search-btn">Search</button>
+                </div>
             </div>
             <a href="./sign in or sign up page.html">
                 <i id="hvr" class="fa-solid fa-user-tie"></i>
@@ -323,7 +341,7 @@
         <h2>Perk Alert: All new Rewards members get $10 off any $30 purchase! Join the VIPs</h2>
     </div>
     <div>
-        <p><a href="./shoppingpage.html"> -Continue Shopping</a> / YOUR BAG</p>
+        <p><a href="./Bodaycare.html"> -Continue Shopping</a> / YOUR BAG</p>
 
     </div>
 
@@ -340,7 +358,7 @@
     <!-- payment page -->
 <div id="finalpart">
  
-    <h3 id="total2">Your  total <span id="prod">0</span></h3>
+    <h3 id="total2"> total products <span id="prod">0</span></h3>
     <h3 id="totalprice2">Your total bill =<span id="totalp"></span></h3>
     <h3 id="tax">SALES TAX = <span id="tax2"></span></h3>
     <hr>
@@ -428,7 +446,7 @@
     display(favdata);
     let bag = [];
 
-    display(favdata)
+    // display(favdata)
     function display(data) {
         let total=0;
         let count=1;
@@ -500,11 +518,31 @@
         document.querySelector("#totalp").innerText=total;
         document.querySelector("#prod").innerText = data.length;
         document.querySelector("#tax2").innerText=total*12/100;
-        document.querySelector("#ordert").innerText=total-(total*12/100);
+        document.querySelector("#ordert").innerText=total+(total*12/100);
     }
 
 
-
+    let search = document.getElementById("search-btn");
+    search.addEventListener("click", () => {
+        let searchInput = document.getElementById("search-input")
+        searchInput = searchInput.value;
+        searchInput = searchInput.toLowerCase();
+        console.log(searchInput)
+        let filterData = proData.filter((element) => {
+            if (element.title.toLowerCase().includes(searchInput) || element.catagory.toLowerCase().includes(searchInput))
+                return true;
+            else
+                return false;
+        })
+        console.log(filterData);
+        display(filterData)
+    })
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", () => {
+        document.getElementById("from").value = "";
+        document.getElementById("to").value = "";
+        display(proData);
+    })
 
 
 </script>

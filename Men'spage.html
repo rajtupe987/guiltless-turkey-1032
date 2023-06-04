@@ -774,8 +774,11 @@
         <div id="logo">
 
             <img src="./Smash Bath1.png" alt="">
-            <div>
-                <input type="text" placeholder="Search by or product...">
+            <div id="search-bar">
+                <div>
+                    <input type="text" id="search-input" placeholder="Enter Search Text">
+                    <button id="search-btn">Search</button>
+                </div>
             </div>
             <a href="./sign in or sign up page.html">
                 <i id="hvr" class="fa-solid fa-user-tie"></i>
@@ -816,7 +819,7 @@
             <option value="3-in-1 Hair, Face & Body Wash">3-in-1 Hair, Face & Body Wash</option>
             
         </select>
-        <select name="" id="selfil"  onchange="Sort()">
+        <select name="" id="selfil"  onchange="applyFilterAndSort()">
 
             <option value="">SORT BY</option>
             <option value="price Low to High">price Low to High</option>
@@ -1440,37 +1443,97 @@
 
     let filter = document.querySelector("#selcatagory");
 
-filter.addEventListener("change", function () {
+// filter.addEventListener("change", function () {
 
-    if (filter.value == "") {
-        display(proData);
-    } else {
+//     if (filter.value == "") {
+//         display(proData);
+//     } else {
+//         let filteredData = proData.filter(function (el) {
+//             return el.catagory === filter.value
+//         })
+//         display(filteredData)
+//     }
+
+// })
+
+
+
+// function Sort() {
+
+//     let x = document.querySelector("#selfil").value;
+
+//     if (x === "price High to Low") {
+//         proData.sort((a, b) => b.price - a.price)
+//     } else if (x === "price Low to High") {
+//         proData.sort((a, b) => a.price - b.price)
+//     }
+
+//     //console.log(data)
+//     display(proData)
+// }
+
+   let filter2 = document.querySelector("#selcatagory");
+    let sortSelect = document.querySelector("#selfil");
+
+    filter2.addEventListener("change", function () {
+        applyFilterAndSort();
+    });
+
+    sortSelect.addEventListener("change", function () {
+        applyFilterAndSort();
+    });
+
+    function applyFilterAndSort() {
         let filteredData = proData.filter(function (el) {
-            return el.catagory === filter.value
-        })
-        display(filteredData)
+            return el.catagory === filter2.value || filter2.value === "";
+        });
+
+        let sortProperty = sortSelect.value;
+
+        filteredData.sort((a, b) => {
+            if (sortProperty === "price High to Low") {
+                return b.price - a.price;
+            } else if (sortProperty === "price Low to High") {
+                return a.price - b.price;
+            }
+            //else {
+            //   // Handle sorting for other properties
+            //   return a[sortProperty].localeCompare(b[sortProperty]);
+            // }
+        });
+
+        display(filteredData);
     }
 
-})
 
 
-
-function Sort() {
-
-    let x = document.querySelector("#selfil").value;
-
-    if (x === "price High to Low") {
-        proData.sort((a, b) => b.price - a.price)
-    } else if (x === "price Low to High") {
-        proData.sort((a, b) => a.price - b.price)
-    }
-
-    //console.log(data)
-    display(proData)
-}
 document.querySelector("#fom").addEventListener("submit",function(){
 
 alert("Email has been Sent to your email account")
 })
+
+
+let search = document.getElementById("search-btn");
+    search.addEventListener("click", () => {
+        let searchInput = document.getElementById("search-input")
+        searchInput = searchInput.value;
+        searchInput = searchInput.toLowerCase();
+        console.log(searchInput)
+        let filterData = proData.filter((element) => {
+            if (element.title.toLowerCase().includes(searchInput) || element.catagory.toLowerCase().includes(searchInput))
+                return true;
+            else
+                return false;
+        })
+        console.log(filterData);
+        display(filterData)
+    })
+    let reset = document.getElementById("reset");
+    reset.addEventListener("click", () => {
+        document.getElementById("from").value = "";
+        document.getElementById("to").value = "";
+        display(proData);
+    })
+
 
 </script>

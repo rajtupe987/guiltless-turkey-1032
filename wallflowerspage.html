@@ -239,122 +239,9 @@
             text-align: center;
             color: #727272;
         }
-        h1{
-            text-align: center;
-        }
-        #select {
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        background-color: rgb(255, 242, 249);
-    }
-
-    #select>select {
-        padding: 1%;
-
-    }
-    @media screen and (min-width:100px) and (max-width:399px){
-        #nav {
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            background-color: #f2f2f2;
-            font-size: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 1%;
-            padding-right: 1%;
-        }
-
-        #navtop1 {
-            display: flex;
-            gap: 6px;
-            color: #e31b88;
-        }
-
-        #navtop2 {
-            display: flex;
-            gap: 6px;
-            color: rgb(74, 74, 253);
-        }
-
-        #navtop1>a {
-            margin-top: 8px;
-        }
-
-        #navtop2>a {
-            margin-top: 8px;
-        }
-
-        #logo {
-            height: 50px;
-            display: flex;
-            
-            margin-top: 8px;
-            font-size: 13px;
-            gap: 10px;
-        }
-
-        #logo>img {
-            width: 20%;
-            margin-left: 40px;
-        }
-
-        #logo>div>input {
-            margin-top: 20px;
-            padding: 1%;
-          
-            font-size: 10px;
-        }
-
-        #logo>a {
-            margin-top: 35px;
-            margin-left: 10px;
-            font-size: 10px;
-            color: black;
-        }
-        #logo>p,span{
-            font-size: 10px;
-        }
-
-        #logo>a:hover {
-            color: rgb(255, 234, 195);
-        }
-
-        #options {
-
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            margin-top: 25px;
-            font-size: 10px;
-            padding-bottom: 1%;
-
-        }
-
-        */ #options>a {
-            text-decoration: none;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            color: #4a4a4a;
-        }
-
-        #options>a {
-            text-decoration: none;
-        }
-        /* adv part */
-
-        #adv {
-            background-color: #e6f5ff;
-            text-align: center;
-            padding-top: 1px;
-            padding-bottom: 1px;
-            color: rgb(122, 122, 245);
-        }
 
         h1 {
             text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         #select {
@@ -370,382 +257,502 @@
 
         }
 
+        @media screen and (min-width:100px) and (max-width:399px) {
+            #nav {
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                background-color: #f2f2f2;
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
 
-        /* api part */
+            #navtop1 {
+                display: flex;
+                gap: 6px;
+                color: #e31b88;
+            }
 
-        #prod {
-            width: 90%;
+            #navtop2 {
+                display: flex;
+                gap: 6px;
+                color: rgb(74, 74, 253);
+            }
 
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 10px;
-            margin: 50px auto;
+            #navtop1>a {
+                margin-top: 8px;
+            }
+
+            #navtop2>a {
+                margin-top: 8px;
+            }
+
+            #logo {
+                height: 50px;
+                display: flex;
+
+                margin-top: 8px;
+                font-size: 13px;
+                gap: 10px;
+            }
+
+            #logo>img {
+                width: 20%;
+                margin-left: 40px;
+            }
+
+            #logo>div>input {
+                margin-top: 20px;
+                padding: 1%;
+
+                font-size: 10px;
+            }
+
+            #logo>a {
+                margin-top: 35px;
+                margin-left: 10px;
+                font-size: 10px;
+                color: black;
+            }
+
+            #logo>p,
+            span {
+                font-size: 10px;
+            }
+
+            #logo>a:hover {
+                color: rgb(255, 234, 195);
+            }
+
+            #options {
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                margin-top: 25px;
+                font-size: 10px;
+                padding-bottom: 1%;
+
+            }
+
+            */ #options>a {
+                text-decoration: none;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #4a4a4a;
+            }
+
+            #options>a {
+                text-decoration: none;
+            }
+
+            /* adv part */
+
+            #adv {
+                background-color: #e6f5ff;
+                text-align: center;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                color: rgb(122, 122, 245);
+            }
+
+            h1 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #select {
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: rgb(255, 242, 249);
+            }
+
+            #select>select {
+                padding: 1%;
+
+            }
+
+
+            /* api part */
+
+            #prod {
+                width: 90%;
+
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                margin: 50px auto;
+            }
+
+
+            /* discripsion part */
+
+            #bootom_part {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                margin: 50px auto;
+                gap: 50px;
+
+            }
+
+            #bootom_part>div:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+
+            }
+
+            #bootom_part>div:nth-child(2)>div>p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #727272;
+                font-size: 15px;
+            }
+
+            #bootom_part>div>p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #727272;
+                font-size: 15px;
+            }
+
+            #bootom_part>h3,
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            /* last bottom part */
+
+            #lastbottom {
+                height: 200px;
+                width: 100%;
+                background-color: #e6e6e6;
+                padding: 2%;
+            }
+
+            #lastbottom>pre {
+                text-align: center;
+                font-size: 1px;
+            }
+
+            #lastbottom>p {
+                text-align: center;
+                color: #727272;
+            }
+
+
+
+            /* API part */
+            #prod {
+                width: 90%;
+                margin-top: 50px auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            #prod>div {
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                padding: 4%;
+            }
+
+            #prod>div>img {
+                width: 37%;
+                margin-left: 85px;
+
+            }
+
+
+            #prod>div>h2 {
+                text-align: center;
+            }
+
+            #products>div>h3 {
+                text-align: center;
+                color: #727272;
+            }
+
+            #prod>div>p {
+                text-align: center;
+            }
+
+            #prod>div>h4 {
+                text-align: center;
+            }
+
+            #prod>div>p {
+                font-size: 16px;
+                color: red;
+            }
+
+            #prod>div>button {
+                color: white;
+                background-color: rgb(58, 58, 58);
+                padding: 6px 55px 6px 55px;
+                margin-left: 15%;
+                margin-top: 20px;
+            }
         }
 
+        @media screen and (min-width:400px) and (max-width:999px) {
+            #nav {
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                background-color: #f2f2f2;
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-left: 1%;
+                padding-right: 1%;
+            }
 
-         /* discripsion part */
+            #navtop1 {
+                display: flex;
+                gap: 10px;
+                color: #e31b88;
+            }
 
-         #bootom_part {
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            margin: 50px auto;
-            gap: 50px;
+            #navtop2 {
+                display: flex;
+                gap: 10px;
+                color: rgb(74, 74, 253);
+            }
 
-        }
+            #navtop1>a {
+                margin-top: 10px;
+            }
 
-        #bootom_part>div:nth-child(2) {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 30px;
+            #navtop2>a {
+                margin-top: 10px;
+            }
 
-        }
+            #logo {
+                height: 70px;
+                display: flex;
+                margin-top: 10px;
+                font-size: 15px;
+                gap: 10px;
+            }
 
-        #bootom_part>div:nth-child(2)>div>p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #727272;
-            font-size: 15px;
-        }
+            #logo>img {
+                width: 15%;
+                margin-left: 50px;
+            }
 
-        #bootom_part>div>p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #727272;
-            font-size: 15px;
-        }
+            #logo>div>input {
+                margin-top: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-right: 10px;
+                font-size: 10px;
+            }
 
-        #bootom_part>h3,
-        h4 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+            #logo>a {
+                margin-top: 35px;
+                margin-left: 20px;
+                font-size: 25px;
+                color: black;
+            }
 
+            #logo>a:hover {
+                color: rgb(255, 234, 195);
+            }
 
-        /* last bottom part */
+            #options {
 
-        #lastbottom {
-            height: 200px;
-            width: 100%;
-            background-color: #e6e6e6;
-            padding: 2%;
-        }
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                margin-top: 25px;
+                font-size: 18px;
+                padding-bottom: 1%;
 
-        #lastbottom>pre {
-            text-align: center;
-            font-size: 1px;
-        }
+            }
 
-        #lastbottom>p {
-            text-align: center;
-            color: #727272;
-        }
+            */ #options>a {
+                text-decoration: none;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #4a4a4a;
+            }
 
+            #options>a {
+                text-decoration: none;
+            }
 
+            /* adv part */
 
-        /* API part */
-        #prod {
-            width: 90%;
-            margin-top: 50px auto;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 20px;
-        }
+            #adv {
+                background-color: #e6f5ff;
+                text-align: center;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                color: rgb(122, 122, 245);
+            }
 
-        #prod>div {
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-            padding: 4%;
-        }
+            h1 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-        #prod>div>img {
-            width: 37%;
-            margin-left: 85px;
+            #select {
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: rgb(255, 242, 249);
+            }
 
-        }
+            #select>select {
+                padding: 1%;
 
-
-        #prod>div>h2 {
-            text-align: center;
-        }
-
-        #products>div>h3 {
-            text-align: center;
-            color: #727272;
-        }
-
-        #prod>div>p {
-            text-align: center;
-        }
-
-        #prod>div>h4 {
-            text-align: center;
-        }
-
-        #prod>div>p {
-            font-size: 16px;
-            color: red;
-        }
-
-        #prod>div>button {
-            color: white;
-            background-color: rgb(58, 58, 58);
-            padding: 6px 55px 6px 55px;
-            margin-left: 15%;
-            margin-top: 20px;
-        }
-    }
-    @media screen and (min-width:400px) and (max-width:999px) {
-        #nav {
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            background-color: #f2f2f2;
-            font-size: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 1%;
-            padding-right: 1%;
-        }
-
-        #navtop1 {
-            display: flex;
-            gap: 10px;
-            color: #e31b88;
-        }
-
-        #navtop2 {
-            display: flex;
-            gap: 10px;
-            color: rgb(74, 74, 253);
-        }
-
-        #navtop1>a {
-            margin-top: 10px;
-        }
-
-        #navtop2>a {
-            margin-top: 10px;
-        }
-
-        #logo {
-            height: 70px;
-            display: flex;
-            margin-top: 10px;
-            font-size: 15px;
-            gap: 10px;
-        }
-
-        #logo>img {
-            width: 15%;
-            margin-left: 50px;
-        }
-
-        #logo>div>input {
-            margin-top: 20px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-right: 10px;
-            font-size: 10px;
-        }
-
-        #logo>a {
-            margin-top: 35px;
-            margin-left: 20px;
-            font-size: 25px;
-            color: black;
-        }
-
-        #logo>a:hover {
-            color: rgb(255, 234, 195);
-        }
-
-        #options {
-
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin-top: 25px;
-            font-size: 18px;
-            padding-bottom: 1%;
-
-        }
-
-        */ #options>a {
-            text-decoration: none;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            color: #4a4a4a;
-        }
-
-        #options>a {
-            text-decoration: none;
-        }
-
-        /* adv part */
-
-        #adv {
-            background-color: #e6f5ff;
-            text-align: center;
-            padding-top: 1px;
-            padding-bottom: 1px;
-            color: rgb(122, 122, 245);
-        }
-
-        h1 {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #select {
-            height: auto;
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            background-color: rgb(255, 242, 249);
-        }
-
-        #select>select {
-            padding: 1%;
-
-        }
+            }
 
 
-        /* api part */
+            /* api part */
 
-        #products {
-            width: 90%;
+            #products {
+                width: 90%;
 
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin: 50px auto;
-        }
-
-
-        /* discripstion part */
-
-        #dispart {
-
-            width: 80%;
-
-            margin: 40px;
-
-            font-family: Arial, Helvetica, sans-serif;
-            margin-right: 90%;
-        }
-
-        #dispart>pre {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #727272;
-            margin-right: 90%;
-        }
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin: 50px auto;
+            }
 
 
-        /* discripsion part */
+            /* discripstion part */
 
-        #bootom_part {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            margin: 50px;
-            margin-left: 50px;
-            gap: 10px;
+            #dispart {
+
+                width: 80%;
+
+                margin: 40px;
+
+                font-family: Arial, Helvetica, sans-serif;
+                margin-right: 90%;
+            }
+
+            #dispart>pre {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #727272;
+                margin-right: 90%;
+            }
+
+
+            /* discripsion part */
+
+            #bootom_part {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                margin: 50px;
+                margin-left: 50px;
+                gap: 10px;
+
+            }
+
+            #bootom_part>div:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+
+            }
+
+            #bootom_part>div:nth-child(2)>div>p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #727272;
+                font-size: 17px;
+            }
+
+            #bootom_part>div>p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #727272;
+                font-size: 17px;
+            }
+
+            #bootom_part>h3,
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            /* last bottom part */
+
+            #lastbottom {
+                height: 200px;
+                width: 100%;
+                background-color: #e6e6e6;
+                padding: 2%;
+            }
+
+            #lastbottom>pre {
+                text-align: center;
+                font-size: 1px;
+            }
+
+            #lastbottom>p {
+                text-align: center;
+                color: #727272;
+            }
+
+
+
+            /* API part */
+            #prod {
+                width: 90%;
+                margin-top: 50px auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            #prod>div {
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                padding: 4%;
+            }
+
+            #prod>div>img {
+                width: 37%;
+                margin-left: 85px;
+
+            }
+
+
+            #prod>div>h2 {
+                text-align: center;
+            }
+
+            #prod>div>h3 {
+                text-align: center;
+                color: #727272;
+            }
+
+            #prod>div>p {
+                text-align: center;
+            }
+
+            #prod>div>h4 {
+                text-align: center;
+            }
+
+            #prod>div>p {
+                font-size: 16px;
+                color: red;
+            }
+
+            #prod>div>button {
+                color: white;
+                background-color: rgb(58, 58, 58);
+                padding: 6px 55px 6px 55px;
+                margin-left: 15%;
+                margin-top: 20px;
+            }
 
         }
-
-        #bootom_part>div:nth-child(2) {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-
-        }
-
-        #bootom_part>div:nth-child(2)>div>p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #727272;
-            font-size: 17px;
-        }
-
-        #bootom_part>div>p {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #727272;
-            font-size: 17px;
-        }
-
-        #bootom_part>h3,
-        h4 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-
-        /* last bottom part */
-
-        #lastbottom {
-            height: 200px;
-            width: 100%;
-            background-color: #e6e6e6;
-            padding: 2%;
-        }
-
-        #lastbottom>pre {
-            text-align: center;
-            font-size: 1px;
-        }
-
-        #lastbottom>p {
-            text-align: center;
-            color: #727272;
-        }
-
-
-
-        /* API part */
-        #prod {
-            width: 90%;
-            margin-top: 50px auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        #prod>div {
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-            padding: 4%;
-        }
-
-        #prod>div>img {
-            width: 37%;
-            margin-left: 85px;
-
-        }
-
-
-        #prod>div>h2 {
-            text-align: center;
-        }
-
-        #prod>div>h3 {
-            text-align: center;
-            color: #727272;
-        }
-
-        #prod>div>p {
-            text-align: center;
-        }
-
-        #prod>div>h4 {
-            text-align: center;
-        }
-
-        #prod>div>p {
-            font-size: 16px;
-            color: red;
-        }
-
-        #prod>div>button {
-            color: white;
-            background-color: rgb(58, 58, 58);
-            padding: 6px 55px 6px 55px;
-            margin-left: 15%;
-            margin-top: 20px;
-        }
-
-    }
     </style>
 </head>
 
@@ -771,8 +778,11 @@
         <div id="logo">
 
             <img src="./Smash Bath1.png" alt="">
-            <div>
-                <input type="text" placeholder="Search by or product...">
+            <div id="search-bar">
+                <div>
+                    <input type="text" id="search-input" placeholder="Enter Search Text">
+                    <button id="search-btn">Search</button>
+                </div>
             </div>
             <a href="./sign in or sign up page.html">
                 <i id="hvr" class="fa-solid fa-user-tie"></i>
@@ -813,9 +823,9 @@
             <option value="Room Spray">Room Spray</option>
             <option value="Fragrance Refil">Fragrance Refil</option>
             <option value="Fragrance Plug">Fragrance Plug</option>
-            
+
         </select>
-        <select name="" id="selfil"  onchange="Sort()">
+        <select name="" id="selfil" onchange="applyFilterAndSort()">
 
             <option value="">SORT BY</option>
             <option value="price Low to High">price Low to High</option>
@@ -908,7 +918,7 @@
             "catagory": "Fragrance Refil",
             "price": 2000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "1"
+            "id": "14"
         },
         {
             "createdAt": "2022-12-16T01:23:52.800Z",
@@ -917,7 +927,7 @@
             "catagory": "Room Spray",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "2"
+            "id": "244"
         },
         {
             "createdAt": "2022-12-15T20:10:10.407Z",
@@ -926,7 +936,7 @@
             "catagory": "Fragrance Refil",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "3"
+            "id": "34"
         },
         {
             "createdAt": "2022-12-15T22:48:55.942Z",
@@ -935,7 +945,7 @@
             "catagory": "Room Spray",
             "price": 6000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "4"
+            "id": "44"
         },
         {
             "createdAt": "2022-12-15T19:25:31.464Z",
@@ -944,7 +954,7 @@
             "catagory": "Fragrance Refil",
             "price": 9000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "5"
+            "id": "54"
         },
         {
             "createdAt": "2022-12-15T08:49:10.240Z",
@@ -953,7 +963,7 @@
             "catagory": "Room Spray",
             "price": 14,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "6"
+            "id": "64"
         },
         {
             "createdAt": "2022-12-16T01:48:18.309Z",
@@ -962,7 +972,7 @@
             "catagory": "Fragrance Plug",
             "price": 3000,
             "Desrciption": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-            "id": "7"
+            "id": "74"
         },
         {
             "createdAt": "2022-12-15T20:21:45.284Z",
@@ -971,7 +981,7 @@
             "catagory": "Room Spray",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "8"
+            "id": "84"
         },
         {
             "createdAt": "2022-12-15T13:42:19.097Z",
@@ -980,7 +990,7 @@
             "catagory": "Fragrance Plug",
             "price": 9000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "9"
+            "id": "94"
         },
         {
             "createdAt": "2022-12-15T15:05:18.749Z",
@@ -989,7 +999,7 @@
             "catagory": "Room Spray",
             "price": 5000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "10"
+            "id": "140"
         },
         {
             "createdAt": "2022-12-15T17:42:15.562Z",
@@ -998,7 +1008,7 @@
             "catagory": "Fragrance Refil",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREEt",
-            "id": "11"
+            "id": "114"
         },
         {
             "createdAt": "2022-12-15T21:23:36.004Z",
@@ -1007,7 +1017,7 @@
             "catagory": "Fragrance Plug",
             "price": 4000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "12"
+            "id": "142"
         },
         {
             "createdAt": "2022-12-15T15:01:41.623Z",
@@ -1016,7 +1026,7 @@
             "catagory": "Fragrance Mist",
             "price": 2000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "1"
+            "id": "14"
         },
         {
             "createdAt": "2022-12-16T01:23:52.800Z",
@@ -1025,7 +1035,7 @@
             "catagory": "Fragrance Plug",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "2"
+            "id": "42"
         },
         {
             "createdAt": "2022-12-15T14:26:23.822Z",
@@ -1034,7 +1044,7 @@
             "catagory": "Room Spray",
             "price": 1000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "13"
+            "id": "143"
         },
         {
             "createdAt": "2022-12-15T20:52:03.897Z",
@@ -1043,7 +1053,7 @@
             "catagory": "Fragrance Plug",
             "price": 8000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "14"
+            "id": "144"
         },
         {
             "createdAt": "2022-12-15T21:33:38.230Z",
@@ -1052,7 +1062,7 @@
             "catagory": "Fragrance Plug",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "15"
+            "id": "154"
         },
         {
             "createdAt": "2022-12-15T13:54:22.429Z",
@@ -1070,7 +1080,7 @@
             "catagory": "Fragrance Plug",
             "price": 5900,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "17"
+            "id": "147"
         },
         {
             "createdAt": "2022-12-15T10:11:12.417Z",
@@ -1079,7 +1089,7 @@
             "catagory": "Fragrance Plug",
             "price": 2800,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "18"
+            "id": "148"
         },
         {
             "createdAt": "2022-12-16T01:37:05.794Z",
@@ -1088,7 +1098,7 @@
             "catagory": "Room Spray",
             "price": 5600,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "19"
+            "id": "149"
         },
         {
             "createdAt": "2022-12-15T16:23:20.539Z",
@@ -1097,7 +1107,7 @@
             "catagory": "Fragrance Refil",
             "price": 7000,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "20"
+            "id": "240"
         },
         {
             "createdAt": "2022-12-15T08:56:34.590Z",
@@ -1106,7 +1116,7 @@
             "catagory": "Fragrance Plug",
             "price": 3400,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "21"
+            "id": "241"
         },
         {
             "createdAt": "2022-12-16T07:00:29.285Z",
@@ -1115,7 +1125,7 @@
             "catagory": "Fragrance Refil",
             "price": 9400,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "22"
+            "id": "242"
         },
         {
             "createdAt": "2022-12-16T06:02:50.534Z",
@@ -1124,7 +1134,7 @@
             "catagory": "Fragrance Plug",
             "price": 8200,
             "Desrciption": "$35 with any $30 Purchase. Limit 1",
-            "id": "23"
+            "id": "243"
         },
         {
             "createdAt": "2022-12-16T01:48:18.309Z",
@@ -1133,7 +1143,7 @@
             "catagory": "Fragrance Refil",
             "price": 3000,
             "Desrciption": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
-            "id": "7"
+            "id": "74"
         },
         {
             "createdAt": "2022-12-15T20:21:45.284Z",
@@ -1142,7 +1152,7 @@
             "catagory": "Fragrance Plug",
             "price": 7000,
             "Desrciption": "Mix & Match Full-Size: Buy 3, Get 3 FREE or Buy 2, Get 1 FREE",
-            "id": "8"
+            "id": "48"
         },
         {
             "createdAt": "2022-12-15T07:17:49.414Z",
@@ -1438,42 +1448,96 @@
     }
 
 
+    // let filter = document.querySelector("#selcatagory");
+
+    // filter.addEventListener("change", function () {
+
+    //     if (filter.value == "") {
+    //         display(proData);
+    //     } else {
+    //         let filteredData = proData.filter(function (el) {
+    //             return el.catagory === filter.value
+    //         })
+    //         display(filteredData)
+    //     }
+
+    // })
+
+
+
+    // function Sort() {
+
+    //     let x = document.querySelector("#selfil").value;
+
+    //     if (x === "price High to Low") {
+    //         proData.sort((a, b) => b.price - a.price)
+    //     } else if (x === "price Low to High") {
+    //         proData.sort((a, b) => a.price - b.price)
+    //     }
+
+    //     //console.log(data)
+    //     display(proData)
+    // }
+
+
     let filter = document.querySelector("#selcatagory");
+    let sortSelect = document.querySelector("#selfil");
 
-filter.addEventListener("change", function () {
+    filter.addEventListener("change", function () {
+        applyFilterAndSort();
+    });
 
-    if (filter.value == "") {
-        display(proData);
-    } else {
+    sortSelect.addEventListener("change", function () {
+        applyFilterAndSort();
+    });
+
+    function applyFilterAndSort() {
         let filteredData = proData.filter(function (el) {
-            return el.catagory === filter.value
+            return el.catagory === filter.value || filter.value === "";
+        });
+
+        let sortProperty = sortSelect.value;
+
+        filteredData.sort((a, b) => {
+            if (sortProperty === "price High to Low") {
+                return b.price - a.price;
+            } else if (sortProperty === "price Low to High") {
+                return a.price - b.price;
+            }
+            //else {
+            //   // Handle sorting for other properties
+            //   return a[sortProperty].localeCompare(b[sortProperty]);
+            // }
+        });
+
+        display(filteredData);
+    }
+
+    document.querySelector("#fom").addEventListener("submit", function () {
+
+        alert("Email has been Sent to your email account")
+    })
+
+
+    let search = document.getElementById("search-btn");
+    search.addEventListener("click", () => {
+        let searchInput = document.getElementById("search-input")
+        searchInput = searchInput.value;
+        searchInput = searchInput.toLowerCase();
+        console.log(searchInput)
+        let filterData = proData.filter((element) => {
+            if (element.title.toLowerCase().includes(searchInput) || element.catagory.toLowerCase().includes(searchInput))
+                return true;
+            else
+                return false;
         })
-        display(filteredData)
-    }
-
-})
-
-
-
-function Sort() {
-
-    let x = document.querySelector("#selfil").value;
-
-    if (x === "price High to Low") {
-        proData.sort((a, b) => b.price - a.price)
-    } else if (x === "price Low to High") {
-        proData.sort((a, b) => a.price - b.price)
-    }
-
-    //console.log(data)
-    display(proData)
-}
-
-document.querySelector("#fom").addEventListener("submit",function(){
-
-alert("Email has been Sent to your email account")
-})
-
-
-
+        console.log(filterData);
+        display(filterData)
+    })
+    // let reset = document.getElementById("reset");
+    // reset.addEventListener("click", () => {
+    //     document.getElementById("from").value = "";
+    //     document.getElementById("to").value = "";
+    //     display(proData);
+    // })
 </script>
