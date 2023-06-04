@@ -8,9 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../CSS/bag.css">
 </head>
 
-<link rel="stylesheet" href="./CSS/bodycare.css">
 <body>
     <!-- nav bar-top part -->
 
@@ -63,60 +63,32 @@
 
         <h2>Perk Alert: All new Rewards members get $10 off any $30 purchase! Join the VIPs</h2>
     </div>
-
     <div>
-        <p><a href="./index.html">HOME</a> / BODY CARE</p>
+        <p><a href="./Bodaycare.html"> -Continue Shopping</a> / YOUR BAG</p>
 
     </div>
 
 
-    <!-- api part -->
+    <h1 id="total">Your  total <span id="fav-total">0</span> Products in the favourites</h1>
+    <h2 id="totalprice">Your total bill =<span id="fav-sum"></span></h2>
+    
 
-    <h1>All Body Care</h1>
+    </button>
+    <div id="fav-container">
+        <!-- Here Append All the Favourites-->
+    </div>
+
+    <!-- payment page -->
+<div id="finalpart">
+ 
+    <h3 id="total2"> total products <span id="prod">0</span></h3>
+    <h3 id="totalprice2">Your total bill =<span id="totalp"></span></h3>
+    <h3 id="tax">SALES TAX = <span id="tax2"></span></h3>
     <hr>
-    <div id="select">
+    <h3 id="finaltotal">ORDER TOTAL - <span id="ordert"></span></h3>
+    <button id="pay2"><a href="./payment.html">CHECKOUT</a>
 
-        <!-- <select name="" id="">
-
-            <option value="">PRODUCT TYPE</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select> -->
-
-        <!-- <select name="" id="">
-            <option value="">FRAGRANCE NAME</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select> -->
-        <select name="" id="selcatagory">
-
-            <option value="">FRAGRANCE CATEGORY</option>
-            <option value="Fragrance Mist">Fragrance Mist</option>
-            <option value="face & body wash">face & body wash</option>
-            <option value="Body cream">Body cream</option>
-            <option value="Oil mist">Oil mist</option>
-            <option value="Foam Bath">Foam Bath</option>
-        </select>
-        <select name="" id="selfil" onchange="applyFilterAndSort()">
-
-            <option value="">SORT BY</option>
-            <option value="price Low to High">price Low to High</option>
-            <option value="price High to Low">price High to Low</option>
-
-        </select>
-    </div>
-
-
-
-    <div id="products">
-
-    </div>
-
-
+</div>
 
     <div id="dispart">
         <h1>Smash Bath works</h1>
@@ -130,18 +102,18 @@
     <!-- line -->
     <hr>
 
-
-
     <div id="bootom_part">
-        <form id="fom">
+        <div>
             <h4>GET EMAIL OFFERS & THE LATEST</h4>
             <h4>NEWS FROM BATH & BODY WORKS!</h4>
             <p>Enter Email</p>
-            <input type="text" placeholder="Enter your Email">
+            <input type="text">
             <p>Confirm Email</p>
-            <input type="text" placeholder="Conferm your Email">
+            <input type="text">
             <button>SUBMIT</button>
-        </form>
+            <p>Get connected</p>
+
+        </div>
         <div>
             <div>
                 <h3>CUSTOMER CARE</h3>
@@ -186,16 +158,12 @@
     </div>
 
 
-    <h1 id="alert"></h1>
-
-
-
-
 </body>
 
 </html>
 
-<script src="./SCRIPT/bodycare.js">
 
+<script src="../SCRIPT/bagpage.js">
+   
 
 </script>
