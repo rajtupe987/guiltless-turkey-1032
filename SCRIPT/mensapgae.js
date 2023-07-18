@@ -516,13 +516,23 @@ function display(data) {
 
 
             if (isalreadyincard == true) {
-                alert("Products already in  bag")
+       
+                Swal.fire(
+                    "Products already in  bag",
+                    '',
+                    'info'
+                  )
+                
             } else {
                 favdata.push({ ...el, quantity: 1 });
 
                 localStorage.setItem("favourites", JSON.stringify(favdata));
-                alert("Products added to  bag")
-
+    
+                Swal.fire(
+                    "Products added to  bag",
+                    '',
+                    'success'
+                  )
             }
         })
 
@@ -603,7 +613,12 @@ function applyFilterAndSort() {
 
 document.querySelector("#fom").addEventListener("submit",function(){
 
-alert("Email has been Sent to your email account")
+
+Swal.fire(
+    "Email has been Sent to your email account",
+    '',
+    'success'
+  )
 })
 
 
@@ -619,7 +634,7 @@ search.addEventListener("click", () => {
         else
             return false;
     })
-    console.log(filterData);
+    // console.log(filterData);
     display(filterData)
 })
 let reset = document.getElementById("reset");

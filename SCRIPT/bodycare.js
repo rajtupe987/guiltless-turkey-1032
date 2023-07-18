@@ -516,12 +516,22 @@ function display(data) {
             }
 
             if (isalreadyincard == true) {
-                alert("Products already in  bag")
+                Swal.fire(
+                    "Products already in  bag",
+                    '',
+                    'info'
+                )
+
             } else {
                 favdata.push({ ...el, quantity: 1 });
 
                 localStorage.setItem("favourites", JSON.stringify(favdata));
-                alert("Products added to  bag")
+               
+                Swal.fire(
+                    "Products added to  bag",
+                    '',
+                    'success'
+                )
 
             }
         })

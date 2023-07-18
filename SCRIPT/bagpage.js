@@ -40,7 +40,12 @@ function display(data) {
             localStorage.setItem("favourites", JSON.stringify(favdata));
 
             display(favdata);
-            alert("cart has been removed")
+        
+            Swal.fire(
+                "cart has been removed",
+                '',
+                'error'
+            )
         })
         
         let inc=document.createElement("button");

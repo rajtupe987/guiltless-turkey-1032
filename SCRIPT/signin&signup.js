@@ -26,14 +26,32 @@ let signinbtn=document.querySelector("signbtn");
     });
 
     if(count==0){
-        alert("user not resistred")
+       
+        Swal.fire(
+            "Products already in  bag",
+            '',
+            'info'
+        )
     }else{
     
         if(temp.password != signin.pass1.value){
-            alert("Wrong password!")
+
+            Swal.fire(
+                "Wrong password!",
+                '',
+                'error'
+            )
         }else{
-          alert("login sucessful!");
-          window.location.assign("./index.html")
+            
+          Swal.fire(
+            "login sucessful!",
+            '',
+            'success'
+          )
+          setTimeout(()=>{
+            window.location.assign("../index.html")   
+          },2000)
+         
         }
 
     }

@@ -17,7 +17,13 @@ signUp.addEventListener("submit", function (event) {
 
 
     if (count > 0) {
-        alert("User already resistered")
+
+        Swal.fire(
+            "User already resistered",
+            '',
+            'info'
+          )
+        
     } else {
 
 
@@ -45,8 +51,11 @@ signUp.addEventListener("submit", function (event) {
             localStorage.setItem("userData", JSON.stringify(users));
             localStorage.setItem('fname', fname);
          
-            alert("Sign Up Succesfull");
-
+            Swal.fire(
+                "Sign Up Succesfull",
+                '',
+                'success'
+              )
 
             signUp.reset();
         }
